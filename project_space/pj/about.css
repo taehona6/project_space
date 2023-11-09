@@ -92,32 +92,37 @@ body{
     line-height: 86px;
     text-align: center;
 }
-.location{
-    margin: 100px 0;
-    position: relative;
-    height: 50px;
-
-    
-}
-.location-inner{
-    
-    font-size: 15px;
-    position: absolute;
-    left: 20%;
-    color: rgba(31, 31, 28, 0.619);
-}
 
 .sub-container{
     width: 100%;
     position: relative;
     /* margin-top: 300px; */
 }
+.location{
+    margin: 100px 0;
+    position: relative;
+    height: 50px;    
+}
+.location-inner{
+    font-size: 15px;
+    /* position: absolute; */
+    /* left: 18%; */
+    width: 1200px;
+    margin: auto;
+    color: rgba(31, 31, 28, 0.619);
+}
+
+.about-section01{
+    /* width: 100%; */
+    height: 600px;
+    position: relative;
+}
+
 .about-kkuljam{ 
     width: 1200px;
-    height: 600px;
-    position: absolute;
-    left: 20%;
-    
+    height: 100%;
+    margin: auto;
+    /* left: 20%; */
 }
 .about-kkuljam-left{
     width: 50%;
@@ -153,3 +158,97 @@ body{
     top: 44%;
 }
 
+.about-section02{
+    /* width: 100%; */
+    height: 1100px;
+    position: relative;
+    /* background-color: blue; */
+}
+
+.about-section02-white-box{
+    width: 1300px;
+    /* height: 600px; */
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.035);
+
+}
+.table-box{
+    width: 900px;
+    margin: auto;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    
+    
+    
+}
+
+.table-box table{
+    width: 900px;
+    border-collapse: collapse;
+    border-top: 1px solid rgba(0, 0, 0, 0.108);
+}
+th,td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.133);
+    
+    padding: 20px;
+}
+td{
+    font-family:"NotoSansKR-Light";
+}
+
+.section03{
+    /* position: relative; */
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.section03 p:nth-of-type(1){
+    color: red;
+    font-family: "NotoSansKR-Bold";
+    font-size: 35px;
+    letter-spacing: -1px;
+    word-spacing: 12px;
+    margin-bottom: 0;
+}
+.section03 p:nth-of-type(2){
+    font-family: "NotoSansKR-Light";    
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.wwd-box{
+    width: 1700px;
+    margin: auto;
+}
+
+.wwd{
+    width: 300px;
+    height: 450px;
+    float: left;
+    margin-left: 20px;
+}
+.wwd div:nth-last-of-type(1){
+    font-family: "NotoSansKR-Light"; 
+    width: 220px;
+    margin: auto;
+    font-size: 16px;
+    
+}
+.wwd div:nth-last-of-type(2){
+    font-family: "NotoSansKR-Bold"; 
+    margin: auto;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    font-size: 28px;
+
+}
+
+.wwd04{
+    background-image: url(../image/whatwedo_bg_05.png) ;
+}
+.wwd05{
+    background-image: url(../image/whatwedo_bg_05.png) ;
+}
