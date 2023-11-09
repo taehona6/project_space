@@ -5,7 +5,6 @@ $(function(){
         // scrollHorizontally:true,
         navigation:true,
         navigationPosition:'right',
-        sectionsColor : ['#ccc','#bbb','#ddd','#eee'],
         controlArrows:false,
 
         afterLoad: function(anchorLink,index){
