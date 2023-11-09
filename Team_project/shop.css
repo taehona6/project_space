@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Gmarket';
+    src: url(../Team_project/Font/GmarketSansTTFMedium.ttf);
+}
+
+body {
+    font-family: 'Gmarket';
+    margin: 0;
+}
+
+/*물건 카테고리*/
+.category-container {
+    width: 100%;
+    height: 10vh;
+}
+
+.category-menu {
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: inline-flex;
+    justify-content: right;
+}
+
+.category-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    min-width: 500px;
+}
+
+ul li {
+    margin: 0 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*이미지를 포함한 물건 카테고리*/
+
+.category-horizontal {
+    width: 100vw;
+    height: 275px;
+}
+
+.category-horizontal-menu {
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: right;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.category-horizontal-nav {
+    margin-top: 75px;
+    width: 100%;
+    height: 100px;
+    line-height: 225px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    min-width: 700px;
+}
+.category-nav-item-pic{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.category-nav-item {
+    
+    text-align: center;
+    min-width: 100px;
+}
+
+.category-nav-item-pic:nth-child(1) {
+    background-image: url(../Team_project/Icons/icon_rug.png);
+}
+
+.category-nav-item-pic:nth-child(2) {
+    background-image: url(../Team_project/Icons/icon_hotel.png);
+}
+
+.category-nav-item-pic:nth-child(3) {
+    background-image: url(../Team_project/Icons/icon_light.png);
+}
+
+.category-nav-item-pic:nth-child(4) {
+    background-image: url(../Team_project/Icons/icon_casa.png);
+}
+
+.category-nav-item-pic:nth-child(5) {
+    background-image: url(../Team_project/Icons/icon_hotel.png);
+}
+
+.category-nav-item-pic:nth-child(6) {
+    background-image: url(../Team_project/Icons/icon_rug.png);
+}
+
+/*LOVED ITEM*/
+.loved-item-container {
+    display: block;
+    font-size: 50px;
+    background-color: aliceblue;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.loved-item-toptext {
+    padding-top: 50px;
+}
+
+.loved-item-list {
+    position: relative;
+    white-space: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    min-height: 575px;
+}
+
+.loved-item-list::-webkit-scrollbar {
+    display: none;
+}
+
+.loved-item-menu {
+    display: inline-block;
+    font-size: 18px;
+    margin: auto;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 350px;
+    border-radius: 15px;
+    transition: all 0.1s linear;
+}
+
+.loved-item-menu:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.loved-item-image {
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Team_project/Slide_image/Loveditem1.png);
+}
+
+.loved-item-description {
+    text-align: left;
+    max-width: 300px;
+}
+
+.loved-item-company {
+    color: #868686;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.loved-item-price {
+    margin-top: 50px;
+    font-size: 26px;
+    font-weight: bold;
+}
