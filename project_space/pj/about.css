@@ -110,6 +110,7 @@ body{
     width: 1200px;
     margin: auto;
     color: rgba(31, 31, 28, 0.619);
+    word-spacing: 7px;
 }
 
 .about-section01{
@@ -247,8 +248,8 @@ td{
 }
 
 .wwd04{
-    background-image: url(../image/whatwedo_bg_05.png) ;
+    background-image: url(image/whatwedo_bg_05.png) ;
 }
 .wwd05{
-    background-image: url(../image/whatwedo_bg_05.png) ;
+    background-image: url(image/whatwedo_bg_05.png) ;
 }
