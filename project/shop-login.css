@@ -267,6 +267,7 @@ footer{
     background-color: white;
     border: none;
     border-bottom: 1px solid rgba(128, 128, 128, 0.405);
+    border-radius: 5px;
 }
 
 .login-option{
@@ -290,11 +291,15 @@ footer{
     width: 420px;
     height: 50px;
     margin-top: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    border-radius: 5px;
 }
 .login-box button:hover{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
+    font-weight: 700;
+    color: white;
 }
 
 .login-other{
