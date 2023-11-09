@@ -1,43 +1,6 @@
-@font-face {
-    font-family: 'Gmarket';
-    src: url(../Team_project/Font/GmarketSansTTFMedium.ttf);
-}
-
-body {
-    font-family: 'Gmarket';
-    margin: 0;
-}
-
-/*물건 카테고리*/
-.category-container {
-    width: 100%;
-    height: 10vh;
-}
-
-.category-menu {
-    font-weight: bold;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    display: inline-flex;
-    justify-content: right;
-}
-
-.category-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    min-width: 500px;
-}
-
-ul li {
-    margin: 0 20px;
-}
-
 a {
+    text-decoration-line: none;
     color: inherit;
-    text-decoration: none;
 }
 
 /*이미지를 포함한 물건 카테고리*/
@@ -66,13 +29,15 @@ a {
     list-style: none;
     min-width: 700px;
 }
-.category-nav-item-pic{
+
+.category-nav-item-pic {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .category-nav-item {
-    
+
     text-align: center;
     min-width: 100px;
 }
@@ -105,16 +70,19 @@ a {
 .loved-item-container {
     display: block;
     font-size: 50px;
-    background-color: aliceblue;
+    background-color: white;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 75px;
+}
+.loved-item-container:nth-child(odd){
+    background-color: aliceblue;
 }
 
 .loved-item-toptext {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
-.loved-item-list {
+.loved-item-list1 {
     position: relative;
     white-space: nowrap;
     overflow: auto;
@@ -122,7 +90,31 @@ a {
     min-height: 575px;
 }
 
-.loved-item-list::-webkit-scrollbar {
+.loved-item-list1::-webkit-scrollbar {
+    display: none;
+}
+
+.loved-item-list2 {
+    position: relative;
+    white-space: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    min-height: 575px;
+}
+
+.loved-item-list2::-webkit-scrollbar {
+    display: none;
+}
+
+.loved-item-list3 {
+    position: relative;
+    white-space: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    min-height: 575px;
+}
+
+.loved-item-list3::-webkit-scrollbar {
     display: none;
 }
 
@@ -130,7 +122,7 @@ a {
     display: inline-block;
     font-size: 18px;
     margin: auto;
-    margin-left: 40px;
+    margin-left: 15px;
     margin-bottom: 50px;
     width: 300px;
     height: 350px;
@@ -165,4 +157,152 @@ a {
     margin-top: 50px;
     font-size: 26px;
     font-weight: bold;
+}
+
+.loved-item-heart-icon {
+    float: right;
+    transform:
+        translate(0, -4px);
+}
+
+.three-row-item-toptext {
+    font-size: 40px;
+    text-align: center;
+}
+
+.three-row-item-container {
+    display: block;
+    height: 1040px;
+    font-size: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.three-row-item-container:nth-child(odd){
+    background-color: aliceblue;
+}
+
+.three-row-item-toptext {
+    padding-top: 50px;
+}
+
+.three-row-item-list {
+    position: relative;
+    min-height: 575px;
+}
+
+.three-row-item-menu {
+    display: inline-block;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 530px;
+    height: 364px;
+    border-radius: 15px;
+}
+
+.three-row-item-image {
+    width: 530px;
+    height: 364px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Team_project/Slide_image/three-row-img1.png);
+    transition: all 0.1s linear;
+    margin-bottom: 25px;
+}
+
+.three-row-item-image:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.three-row-item-company {
+    padding-top: 250px;
+    padding-left: 50px;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 18px;
+    max-width: 530px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.three-row-item-description {
+    padding-left: 50px;
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    font-size: 24px;
+    text-align: left;
+    max-width: 530px;
+}
+
+.three-row-item {
+    transition: all 0.1s linear;
+    text-align: left;
+    height: 143px;
+}
+
+.three-row-item:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.three-row-item-company-sub {
+    font-size: 14px;
+    color: #868686;
+    transform: translate(0%, 50%);
+}
+
+.three-row-item-img {
+    float: left;
+    margin-right: 20px;
+}
+
+.three.row-item-name {
+    transform: translate(0%, 0%);
+    margin-bottom: 7%;
+}
+
+.three-row-item-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #868686;
+    font-weight: bold;
+}
+
+.three-row-item-dc-rate {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    display: inline;
+}
+
+.three-row-item-dc-price {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline;
+}
+
+.three-row-item-heart-icon {
+    float: right;
+    transform:
+        translate(-16px, -24px);
+}
+
+.fp-controlArrow.fp-prev {
+    left: 0;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(left.png) no-repeat;
+    cursor: pointer;
+}
+
+.fp-controlArrow.fp-next {
+    right: 0;
+    border: none;
+    width: 50px;
+    height: 101px;
+    background: url(right.png) no-repeat;
+    cursor: pointer;
 }
