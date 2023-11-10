@@ -24,18 +24,13 @@ body{
     position: fixed;
     width: 100%;
     height: 86px;
-    z-index: 100;
-    
-}
-.sub-container{
-    width: 100px;
-    height: 100px;
+    z-index: 800;
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
 .header .inner {
-    /* background-color: aquamarine; */
-    margin-left: 300px;
-    
+    margin: auto;
     max-width: 1460px;
     display: flex;
     justify-content: space-between;
@@ -77,81 +72,19 @@ body{
     padding-left: 0;
 }
 .gnb-util ul li{
-    width: 100px;
+    width: 60px;
 }
 .gnb-util ul div{
     display: flex;
     align-items: center;
     height: 86px;
 }
-.gnb-search{
-    display: block;
-    text-decoration: none;
-    width: 100%;
-    height: 86px;
-    line-height: 86px;
-    text-align: center;
-}
 
-.location{
-    margin: 100px 0;
-    position: relative;
-    height: 50px;    
-}
-.location-inner{
-    font-size: 15px;
-    /* position: absolute; */
-    /* left: 18%; */
-    width: 1200px;
-    margin: auto;
-    color: rgba(31, 31, 28, 0.619);
-    word-spacing: 7px;
-}
 
-.gt-box{
-    width: 1260px;
-    height: 1260px;
-    margin: auto;
-    background-image: url(image/ceo_bg.png);
-    position: relative;
+.gnb-util a{
+    color: black;
+    transform: translate(0,7%);
 }
-
-.gt-text{
-    width: 680px;
-    position: absolute;
-    left:36%;
-    top:8%;
-}
-.gt-text p{
-    color: red;
-    font-size: 18px;
-}
-
-.gt-title{
-    width: 800px;
-    font-size: 33px;
-    margin-bottom: 30px;
-    font-weight: 500;
-}
-
-.gt-main{
-    line-height: 30px;
-}
-
-.gt-end{
-    transform: translate(40%,40%);
-    font-size: 20px;
-}
-
-.gt-end img{
-    width: 180px;
-    transform: translate(10%,40%);
-}
-
-.section01{
-    margin-bottom: 250px;
-}
-
 
 /* 푸터 */
 .logo-container img {
@@ -210,4 +143,116 @@ body{
     padding: 150px 0; 
     background-color: rgba(104, 104, 104, 0.243);
     position: relative;
+}
+
+
+
+
+.banner{
+    background-image: url(image/sub_visual_01.png);
+    width: 100%;
+    height: 314px;
+    
+}
+.location{
+    /* margin: 100px 0; */
+    padding-top: 100px;
+    position: relative;
+    height: 50px;    
+    z-index: 500;
+    
+}
+.location-inner{
+    z-index: 500;
+    font-size: 15px;
+    /* position: absolute; */
+    /* left: 18%; */
+    width: 1200px;
+    margin: auto;
+    color: rgba(255, 255, 255, 0.986);
+    word-spacing: 7px;
+    
+}
+
+.section01-white-box{
+    width: 1200px;
+    
+    margin: auto;
+    background-color: white;
+    margin-top: -95px;
+    
+}
+.table-title{
+    text-align: center;
+    padding-top : 50px;
+    font-size: 35px;
+}
+.table-box{
+    width: 1100px;
+    margin: auto;
+    margin-top: 75px;
+    margin-bottom: 70px;
+}
+.table-box table{
+    width: 1100px;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0.091);
+}
+.table-box th,td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.173);
+}
+.table-box th{
+    width: 280px;
+    height: 90px;
+    border-right: 1px solid rgba(0, 0, 0, 0.185);
+    background-color: #EEEEEE;
+    font-size: 14px;
+    font-family:'NotoSansKR-Light'
+}
+.table-box td{
+    padding-left: 15px;
+}
+table input{
+    border: 1px solid rgba(0, 0, 0, 0.068);
+    height: 35px;
+    padding-left: 10px;
+
+}
+.tell{
+    width: 100px;
+}
+.name, .email{
+    width: 750px;
+    height: 35px;
+    box-sizing: border-box;
+}
+.addr{
+    height: 20px;
+    margin-right: 20px;
+    margin-bottom: 4px;
+}
+.addr2,.addr3{
+    width: 450px;
+}
+.ask{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 750px;
+    height: 350px;
+    line-height: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.076);
+
+}
+.send{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.send button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
 }
