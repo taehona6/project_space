@@ -92,6 +92,14 @@ a{
     list-style: none;
     min-width: 500px;
 }
+
+.category-item {
+    font-weight: normal;
+}
+.category-item:hover {
+    font-size: 20px;
+    font-weight: bold;
+}
 .menu-ul li a:hover{
     background-color: gray;
     /* color: white; */
