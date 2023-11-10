@@ -338,6 +338,9 @@ a {
     display: inline-block;
     transition: all 0.1s linear;
 }
+.item-menu img{
+    border-radius: 10px / 10px;
+}
 
 .item-menu:hover {
     transform: scale(1.1, 1.1);
