@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../project_ksj/투자정보.css">
+    <script src="../project_ksj/투자정보.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="#"><img src="../project_ksj/image/로고-검정.png" alt="" id="logo-img"></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#" class="nav-a">회사소개</a></li>
+                        <li><a href="#" class="nav-a">브랜드</a></li>
+                        <li><a href="#" class="nav-a">공지사항</a></li>
+                        <li><a href="#" class="nav-a">고객지원</a></li>
+                        <li><a href="#" class="nav-a">투자정보</a></li>
+                    </ul>
+                </div>
+                <div class="gnb-util">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="" class="nav-a">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                      </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="" class="nav-a">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                      </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="location">
+            <div class="location-inner">
+                투자정보 > 재무정보
+            </div>
+        </div>
+        <div>
+<div class="table-wrap">
+    <ul>
+        <li><a href="#" onclick="showTable('table1')">연결 재무 제표</a></li>
+        <li><a href="#" onclick="showTable('table2')">별도 재무 제표</a></li>
+    </ul>
+</div>
+<div class="table-content" id="table1">
+    <table>       
+        <thead>
+            <tr>
+                <th>표1 헤더1</th>
+                <th>표1 헤더2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>값1</td>
+                <td>값2</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="table-content" id="table2">
+    <table>
+        <thead>
+            <tr>
+                <th>표2 헤더1</th>
+                <th>표2 헤더2</th>
+                <!-- 필요에 따라 헤더 추가 -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>값1</td>
+                <td>값2</td>
+                <!-- 필요에 따라 값 추가 -->
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+
