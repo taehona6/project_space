@@ -3,6 +3,7 @@
     src: url('./font/Noto_Sans_KR/static/NotoSansKR-Medium.ttf');
 }
 
+
 body{
     margin: 0;
     font-family:'NotoSansKR'

@@ -17,18 +17,39 @@
                 </div>
                 <div class="nav">
                     <ul>
-                        <li><a href="#" class="nav-a">회사소개</a></li>
-                        <li><a href="#" class="nav-a">브랜드</a></li>
-                        <li><a href="#" class="nav-a">공지사항</a></li>
-                        <li><a href="#" class="nav-a">고객지원</a></li>
-                        <li><a href="#" class="nav-a">투자정보</a></li>
+                        <li data-submenu="submenu1"><a href="#" class="nav-a">회사소개</a></li>
+                        <li data-submenu="submenu2"><a href="#" class="nav-a">브랜드</a></li>
+                        <li data-submenu="submenu3"><a href="#" class="nav-a">공지사항</a></li>
+                        <li data-submenu="submenu4"><a href="#" class="nav-a">고객지원</a></li>
+                        <li data-submenu="submenu5"><a href="#" class="nav-a">투자정보</a></li>
                     </ul>
+
+                    <div id="submenu1" class="submenu">
+                        <a href="#">About 꿀잠</a>
+                        <a href="#">CEO 인사말</a>
+                    </div>
+                
+                    <div id="submenu2" class="submenu">
+                        <a href="#">브랜드 스토리</a>
+                    </div>
+                    <div id="submenu3" class="submenu">
+                        <a href="#">공지사항</a>
+                        
+                    </div>
+                    <div id="submenu4" class="submenu">
+                        <a href="#">1:1 문의</a>
+                    
+                    </div>
+                    <div id="submenu5" class="submenu">
+                        <a href="#">재무 정보</a>
+                    </div>
+
                 </div>
                 <div class="gnb-util">
                     <ul>
                         <li>
                             <div>
-                                <a href="" class="nav-a">
+                                <a href="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                         class="bi bi-cart" viewBox="0 0 16 16">
                                         <path
@@ -39,7 +60,7 @@
                         </li>
                         <li>
                             <div>
-                                <a href="" class="nav-a">
+                                <a href="">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                         class="bi bi-search" viewBox="0 0 16 16">
                                         <path
@@ -51,8 +72,44 @@
                     </ul>
                 </div>
             </div>
+
         </div>
+
     </header>
+    <script>
+document.querySelectorAll('.nav ul li').forEach(function(menuItem) {
+    var submenuId = menuItem.dataset.submenu;
+    var submenu = document.getElementById(submenuId);
+
+    menuItem.addEventListener('mouseover', function() {
+        submenu.style.opacity = '1';
+        submenu.style.maxHeight = '500px';
+    });
+
+    submenu.addEventListener('mouseover', function() {
+        submenu.style.opacity = '1';
+        submenu.style.maxHeight = '500px';
+    });
+
+    menuItem.addEventListener('mouseout', function() {
+        submenu.style.opacity = '0';
+        submenu.style.maxHeight = '0';
+    });
+
+    submenu.addEventListener('mouseout', function() {
+        submenu.style.opacity = '0';
+        submenu.style.maxHeight = '0';
+    });
+});
+
+
+    </script>
+
+
+
+
+
+
 
     <main>
 

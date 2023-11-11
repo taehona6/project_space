@@ -18,7 +18,8 @@ header{
 
 body{
     margin: 0;
-    font-family:'NotoSansKR'
+    font-family:'NotoSansKR';
+    
 }
 .header{
     position: fixed;
@@ -145,15 +146,6 @@ body{
     position: relative;
 }
 
-
-
-
-.banner{
-    background-image: url(image/sub_visual_01.png);
-    width: 100%;
-    height: 314px;
-    
-}
 .location{
     /* margin: 100px 0; */
     padding-top: 100px;
@@ -174,85 +166,33 @@ body{
     
 }
 
-.section01-white-box{
-    width: 1200px;
-    
-    margin: auto;
-    background-color: white;
-    margin-top: -95px;
-    
-}
-.table-title{
-    text-align: center;
-    padding-top : 50px;
-    font-size: 35px;
-}
-.table-box{
-    width: 1100px;
-    margin: auto;
+
+
+.section01{
     margin-top: 75px;
-    margin-bottom: 70px;
+    padding-top: 75px;
 }
-.table-box table{
-    width: 1100px;
-    border-collapse: collapse;
-    border: 1px solid rgba(0, 0, 0, 0.091);
-}
-.table-box th,td{
-    border-bottom: 1px solid rgba(0, 0, 0, 0.173);
-}
-.table-box th{
-    width: 280px;
-    height: 90px;
-    border-right: 1px solid rgba(0, 0, 0, 0.185);
-    background-color: #EEEEEE;
-    font-size: 14px;
-    font-family:'NotoSansKR-Light'
-}
-.table-box td{
-    padding-left: 15px;
-}
-table input{
-    border: 1px solid rgba(0, 0, 0, 0.068);
-    height: 35px;
-    padding-left: 10px;
 
-}
-.tell{
-    width: 100px;
-}
-.name, .email{
-    width: 750px;
-    height: 35px;
-    box-sizing: border-box;
-}
-.addr{
-    height: 20px;
-    margin-right: 20px;
-    margin-bottom: 4px;
-}
-.addr2,.addr3{
-    width: 450px;
-}
-.ask{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 750px;
-    height: 350px;
-    line-height: 20px;
-    box-sizing: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.076);
+.section01, .section02, .section03{
 
-}
-.send{
-    margin-top: 50px;
+    
     text-align: center;
+
+    
+}
+.img-box img{
+    width: 70%;
 }
 
-.send button{
-    background-color: black;
-    color: white;
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
+.text-box{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    width: 930px;
+    margin: auto;
+    font-family: 'NotoSansKR-Light';
 }
+.text-box h2{
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
