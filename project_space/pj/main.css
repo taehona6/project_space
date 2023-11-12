@@ -1,8 +1,19 @@
 @font-face {
-    font-family: "NotoSansKR";
-    src: url('./font/Noto_Sans_KR/static/NotoSansKR-Medium.ttf');
+    font-family: "NotoSansKR-Light";
+    src:url("./font/Noto_Sans_KR/static/NotoSansKR-Light.ttf");
 }
 
+@font-face {
+    font-family: "NotoSansKR";
+    src: url("./font/Noto_Sans_KR/static/NotoSansKR-Medium.ttf");
+}
+@font-face {
+    font-family: "NotoSansKR-Bold";
+    src:url('./font/Noto_Sans_KR/static/NotoSansKR-Bold.ttf')
+}
+header{
+    /* height: 86px;  다른 페이지는 있어야됨*/
+}
 
 body{
     margin: 0;
@@ -12,9 +23,8 @@ body{
     position: fixed;
     width: 100%;
     height: 86px;
-    z-index: 100;
+    z-index: 600;
     background-color: rgb(255, 255, 255);
-    transition: 0.3s;
 }
 
 .header .inner {
@@ -23,6 +33,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .nav ul{
@@ -38,16 +49,16 @@ body{
 .nav ul li a{
     display: block;
     text-decoration: none;
-    width: 100%;
+    width: 100px;
     height: 86px;
     line-height: 86px;
     text-align: center;
     color: black;
     border-bottom: 2px solid rgba(240, 248, 255, 0);
     transition: 0.3s;
-
+    z-index: 101;
 }
-.nav ul li a:hover{
+.nav a:hover{
     color: red;
     border-bottom: 4px solid rgba(255, 0, 0, 0.522);
     transition: 0.1s;
@@ -72,4 +83,110 @@ body{
 .gnb-util a{
     color: black;
     transform: translate(0,7%);
+}
+
+
+.header {
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.154);
+}
+
+.header:hover {
+    height: 260px; 
+}
+
+
+
+.submenu a{
+    
+    margin-top: 50px;
+    margin-right: 10px;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.nav {
+    position: relative;
+    
+}
+
+
+.submenu {
+    position: absolute;
+    top: 86px;
+    left: 11px;
+    right: 0; 
+    display: flex;
+    /* justify-content: space-around; */
+    opacity: 0;
+    max-height: 0; 
+    overflow: hidden; 
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+
+/* 푸터 */
+.logo-container img {
+    max-width: 100px; /* 이미지의 최대 너비를 100px로 제한 */
+    height: auto; /* 너비에 따라 높이가 자동으로 조절됨 */
+    margin-left: 100px;
+}
+
+.logo-container {
+    float: left; /* 로고 컨테이너를 왼쪽으로 띄움 */
+    margin-right: 10px; /* 로고와 문구 사이의 간격 설정 */
+}
+
+.text-container {
+    text-align: center; /* 텍스트를 수평 가운데 정렬합니다. */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 화면 가운데로 이동합니다. */
+}
+.text-container p {
+    margin: 10px 0; 
+    font-size: 14px;
+    color: rgb(62, 62, 62);
+    text-align: left; 
+    margin:0;
+    }
+
+.image-container {
+    float: right; /* 아이콘 컨테이너를 오른쪽으로 띄움 */
+    text-align: right; /* 아이콘을 오른쪽 정렬합니다. */
+    margin-right: 100px;
+
+}
+
+.image-container a {
+    display: inline-block; /* 링크 요소를 블록 요소로 변경하여 여러 요소가 나란히 출력되도록 합니다. */
+    margin-left: 20px; /* 아이콘 사이의 간격 설정 */
+}
+
+.image-container a img {
+    width: 25px;
+    height: 25px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.section.s3.fp-auto-height {
+    padding: 150px 0; 
+    background-color: rgba(104, 104, 104, 0.243);
+    position: relative;
 }

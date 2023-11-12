@@ -2,11 +2,11 @@ $(function(){
 
     $('#fullpage').fullpage({
         autoScrolling:true,
-        // scrollHorizontally:true,
         navigation:true,
         navigationPosition:'right',
-        sectionsColor : ['#ccc','#bbb','#ddd','#eee'],
         controlArrows:false,
+        
+
 
         afterLoad: function(anchorLink,index){
             let header = document.querySelector('.header');
@@ -32,8 +32,8 @@ $(function(){
             setInterval(function () {
                 $.fn.fullpage.moveSlideRight();
             }, 2000);
-        }
-
-
+        },
+        
+        
     })
 });
