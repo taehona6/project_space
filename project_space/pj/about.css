@@ -1,25 +1,28 @@
 @font-face {
     font-family: "NotoSansKR-Light";
-    src:url("./font/Noto_Sans_KR/static/NotoSansKR-Light.ttf");
+    src: url("./font/Noto_Sans_KR/static/NotoSansKR-Light.ttf");
 }
 
 @font-face {
     font-family: "NotoSansKR";
     src: url("./font/Noto_Sans_KR/static/NotoSansKR-Medium.ttf");
 }
+
 @font-face {
     font-family: "NotoSansKR-Bold";
-    src:url('./font/Noto_Sans_KR/static/NotoSansKR-Bold.ttf')
-}
-header{
-    height: 86px; 
+    src: url('./font/Noto_Sans_KR/static/NotoSansKR-Bold.ttf')
 }
 
-body{
-    margin: 0;
-    font-family:'NotoSansKR'
+header {
+    height: 86px;
 }
-.header{
+
+body {
+    margin: 0;
+    font-family: 'NotoSansKR'
+}
+
+.header {
     position: fixed;
     width: 100%;
     height: 86px;
@@ -33,20 +36,22 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.nav ul li{
+
+.nav ul li {
     width: 100px;
-    height: 86px;    
+    height: 86px;
 }
-.nav ul li a{
+
+.nav ul li a {
     display: block;
     text-decoration: none;
     width: 100px;
@@ -58,31 +63,34 @@ body{
     transition: 0.3s;
     z-index: 101;
 }
-.nav a:hover{
+
+.nav a:hover {
     color: red;
     border-bottom: 4px solid rgba(255, 0, 0, 0.522);
     transition: 0.1s;
 }
 
-.gnb-util ul{
+.gnb-util ul {
     display: flex;
     list-style: none;
-    margin: 0;  
+    margin: 0;
     padding-left: 0;
 }
-.gnb-util ul li{
+
+.gnb-util ul li {
     width: 60px;
 }
-.gnb-util ul div{
+
+.gnb-util ul div {
     display: flex;
     align-items: center;
     height: 86px;
 }
 
 
-.gnb-util a{
+.gnb-util a {
     color: black;
-    transform: translate(0,7%);
+    transform: translate(0, 7%);
 }
 
 
@@ -92,14 +100,14 @@ body{
 }
 
 .header:hover {
-    height: 260px; 
+    height: 260px;
 }
 
 
 
-.submenu a{
+.submenu a {
     /* min-width: 75px; */
-    
+
     margin-top: 50px;
     margin-right: 35px;
     font-size: 17px;
@@ -114,17 +122,17 @@ body{
 
 
 
-.submenu a::before{
+.submenu a::before {
     content: "> ";
     padding-right: 5px;
-    
+
     text-align: right;
     color: rgb(80, 83, 86);
 }
 
 .nav {
     position: relative;
-    
+
 }
 
 
@@ -132,12 +140,12 @@ body{
     position: absolute;
     top: 86px;
     left: 11px;
-    right: 0; 
+    right: 0;
     display: flex;
     /* justify-content: space-around; */
     opacity: 0;
-    max-height: 0; 
-    overflow: hidden; 
+    max-height: 0;
+    overflow: hidden;
     transition: all 0.2s ease-in-out;
 }
 
@@ -146,17 +154,19 @@ body{
 
 
 
-.sub-container{
+.sub-container {
     width: 100%;
     position: relative;
     /* margin-top: 300px; */
 }
-.location{
+
+.location {
     margin: 100px 0;
     position: relative;
-    height: 50px;    
+    height: 50px;
 }
-.location-inner{
+
+.location-inner {
     font-size: 15px;
     /* position: absolute; */
     /* left: 18%; */
@@ -166,38 +176,41 @@ body{
     word-spacing: 7px;
 }
 
-.about-section01{
+.about-section01 {
     /* width: 100%; */
     height: 600px;
     position: relative;
     /* background-color: aliceblue; */
 }
 
-.about-kkuljam{ 
+.about-kkuljam {
     width: 1200px;
     height: 100%;
     margin: auto;
-    
+
 }
-.about-kkuljam-left{
+
+.about-kkuljam-left {
     width: 50%;
     height: 510px;
     float: left;
 }
-.about-kkuljam-right{
+
+.about-kkuljam-right {
     width: 50%;
     height: 510px;
     float: left;
     position: relative;
 }
 
-.about-kkuljam-right p{
+.about-kkuljam-right p {
     padding-top: 20px;
     padding-left: 45px;
     color: red;
     font-weight: 700;
 }
-.about-kkuljam-right div:nth-of-type(1){
+
+.about-kkuljam-right div:nth-of-type(1) {
     font-family: "NotoSansKR-Bold";
     font-size: 33px;
     color: black;
@@ -209,9 +222,10 @@ body{
     word-spacing: -2px;
     letter-spacing: -1px;
 }
-.about-kkuljam-right div:nth-of-type(2){
+
+.about-kkuljam-right div:nth-of-type(2) {
     width: 630px;
-    font-family:"NotoSansKR-Light";
+    font-family: "NotoSansKR-Light";
     font-size: 19px;
     color: black;
     line-height: 1.4;
@@ -221,54 +235,58 @@ body{
     top: 44%;
 }
 
-.about-section02{
+.about-section02 {
     /* width: 100%; */
     height: 1100px;
     position: relative;
     /* background-color: blue; */
 }
 
-.about-section02-white-box{
+.about-section02-white-box {
     width: 1300px;
     /* height: 600px; */
     background-color: white;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,-40%);
+    transform: translate(-50%, -40%);
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.035);
 
 }
-.table-box{
+
+.table-box {
     width: 900px;
     margin: auto;
     padding-top: 90px;
     padding-bottom: 50px;
-    
-    
-    
+
+
+
 }
 
-.table-box table{
+.table-box table {
     width: 900px;
     border-collapse: collapse;
     border-top: 1px solid rgba(0, 0, 0, 0.108);
 }
-th,td{
+
+th,
+td {
     border-bottom: 1px solid rgba(0, 0, 0, 0.133);
-    
+
     padding: 20px;
 }
-td{
-    font-family:"NotoSansKR-Light";
+
+td {
+    font-family: "NotoSansKR-Light";
 }
 
-.section03{
+.section03 {
     /* position: relative; */
     text-align: center;
     margin-bottom: 100px;
 }
 
-.section03 p:nth-of-type(1){
+.section03 p:nth-of-type(1) {
     color: red;
     font-family: "NotoSansKR-Bold";
     font-size: 35px;
@@ -276,33 +294,37 @@ td{
     word-spacing: 12px;
     margin-bottom: 0;
 }
-.section03 p:nth-of-type(2){
-    font-family: "NotoSansKR-Light";    
+
+.section03 p:nth-of-type(2) {
+    font-family: "NotoSansKR-Light";
     font-weight: 600;
     margin-bottom: 100px;
 }
 
-.wwd-box{
+.wwd-box {
     width: 1700px;
     height: 500px;
     margin: auto;
+    
 }
 
-.wwd{
+.wwd {
     width: 300px;
     height: 450px;
     float: left;
-    margin-left: 20px;
+    margin-left: 40px;
 }
-.wwd div:nth-last-of-type(1){
-    font-family: "NotoSansKR-Light"; 
+
+.wwd div:nth-last-of-type(1) {
+    font-family: "NotoSansKR-Light";
     width: 220px;
     margin: auto;
-    font-size: 16px;
+    font-size: 17px;
     
 }
-.wwd div:nth-last-of-type(2){
-    font-family: "NotoSansKR-Bold"; 
+
+.wwd div:nth-last-of-type(2) {
+    font-family: "NotoSansKR-Bold";
     margin: auto;
     margin-top: 200px;
     margin-bottom: 30px;
@@ -310,52 +332,75 @@ td{
 
 }
 
-.wwd04{
-    background-image: url(image/whatwedo_bg_05.png) ;
+.wwd01 {
+    background-image: url(image/whatwedo_bg_01.png);
 }
-.wwd05{
-    background-image: url(image/whatwedo_bg_05.png) ;
+.wwd02 {
+    background-image: url(image/whatwedo_bg_02.png);
 }
+.wwd03 {
+    background-image: url(image/whatwedo_bg_03.png);
+}
+.wwd04 {
+    background-image: url(image/whatwedo_bg_04.png);
+}
+.wwd05 {
+    background-image: url(image/whatwedo_bg_05.png);
+}
+
+
+
 
 
 
 /* 푸터 */
 .logo-container img {
-    max-width: 100px; /* 이미지의 최대 너비를 100px로 제한 */
-    height: auto; /* 너비에 따라 높이가 자동으로 조절됨 */
+    max-width: 100px;
+    /* 이미지의 최대 너비를 100px로 제한 */
+    height: auto;
+    /* 너비에 따라 높이가 자동으로 조절됨 */
     margin-left: 100px;
 }
 
 .logo-container {
-    float: left; /* 로고 컨테이너를 왼쪽으로 띄움 */
-    margin-right: 10px; /* 로고와 문구 사이의 간격 설정 */
+    float: left;
+    /* 로고 컨테이너를 왼쪽으로 띄움 */
+    margin-right: 10px;
+    /* 로고와 문구 사이의 간격 설정 */
 }
 
 .text-container {
-    text-align: center; /* 텍스트를 수평 가운데 정렬합니다. */
+    text-align: center;
+    /* 텍스트를 수평 가운데 정렬합니다. */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* 화면 가운데로 이동합니다. */
+    transform: translate(-50%, -50%);
+    /* 화면 가운데로 이동합니다. */
 }
+
 .text-container p {
-    margin: 10px 0; 
+    margin: 10px 0;
     font-size: 14px;
     color: rgb(62, 62, 62);
-    text-align: left; 
-    margin:0;
-    }
+    text-align: left;
+    margin: 0;
+}
 
 .image-container {
-    float: right; /* 아이콘 컨테이너를 오른쪽으로 띄움 */
-    text-align: right; /* 아이콘을 오른쪽 정렬합니다. */
+    float: right;
+    /* 아이콘 컨테이너를 오른쪽으로 띄움 */
+    text-align: right;
+    /* 아이콘을 오른쪽 정렬합니다. */
     margin-right: 100px;
 
 }
 
 .image-container a {
-    display: inline-block; /* 링크 요소를 블록 요소로 변경하여 여러 요소가 나란히 출력되도록 합니다. */
-    margin-left: 20px; /* 아이콘 사이의 간격 설정 */
+    display: inline-block;
+    /* 링크 요소를 블록 요소로 변경하여 여러 요소가 나란히 출력되도록 합니다. */
+    margin-left: 20px;
+    /* 아이콘 사이의 간격 설정 */
 }
 
 .image-container a img {
@@ -372,8 +417,9 @@ td{
     height: 100%;
     object-fit: cover;
 }
+
 .section.s3.fp-auto-height {
-    padding: 150px 0; 
+    padding: 150px 0;
     background-color: rgba(104, 104, 104, 0.243);
     position: relative;
 }
