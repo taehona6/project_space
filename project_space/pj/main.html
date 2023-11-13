@@ -10,9 +10,8 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="../full-page/jquery.fullPage.js"></script>
     <script src="main.js"></script>
-    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="main.css">
 
 </head>
 
@@ -25,31 +24,40 @@
                 </div>
                 <div class="nav">
                     <ul>
-                        <li data-submenu="submenu1"><a href="#" class="nav-a">회사소개</a></li>
-                        <li data-submenu="submenu2"><a href="#" class="nav-a">브랜드</a></li>
-                        <li data-submenu="submenu3"><a href="#" class="nav-a">공지사항</a></li>
-                        <li data-submenu="submenu4"><a href="#" class="nav-a">고객지원</a></li>
+                        <li data-submenu="submenu1"><a href="about.html" class="nav-a">회사소개</a></li>
+                        <li data-submenu="submenu2"><a href="brandstory.html" class="nav-a">브랜드</a></li>
+                        <li data-submenu="submenu3"><a href="notice.html" class="nav-a">공지사항</a></li>
+                        <li data-submenu="submenu4"><a href="support.html" class="nav-a">고객지원</a></li>
                         <li data-submenu="submenu5"><a href="#" class="nav-a">투자정보</a></li>
                     </ul>
 
                     <div id="submenu1" class="submenu">
-                        <a href="#">About 꿀잠</a>
-                        <a href="#">CEO 인사말</a>
+                        <a href="about.html">About 꿀잠</a>
+                        <a href="greeting.html">CEO 인사말</a>
+                        <a href="#">연혁</a>
                     </div>
 
                     <div id="submenu2" class="submenu">
-                        <a href="#">브랜드 스토리</a>
+                        <a href="brandstory.html">브랜드 스토리</a>
+                        <a href="#">국내 브랜드</a>
+                        <a href="#">글로벌 브랜드</a>
                     </div>
                     <div id="submenu3" class="submenu">
-                        <a href="#">공지사항</a>
+                        <a href="notice.html">공지사항</a>
+                        <a href="#">뉴스</a>
+                        <a href="#">이벤트</a>
 
                     </div>
                     <div id="submenu4" class="submenu">
-                        <a href="#">1:1 문의</a>
+                        <a href="support.html">1:1 문의</a>
+                        <a href="#">자주 묻는 질문</a>
+                        <a href="#">자료실</a>
 
                     </div>
                     <div id="submenu5" class="submenu">
                         <a href="#">재무 정보</a>
+                        <a href="#">주가 정보</a>
+                        <a href="#">공시/공고</a>
                     </div>
 
                 </div>
@@ -72,6 +80,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
                                         class="bi bi-search" viewBox="0 0 16 16">
                                         <path
+                                        
                                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                     </svg>
                                 </a>
@@ -131,7 +140,7 @@
         </section>
         <section class="section s2">
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">///
+                <div class="swiper-wrapper">
                     <div class="swiper-slide">Slide 1</div>
                     <div class="swiper-slide">Slide 2</div>
                     <div class="swiper-slide">Slide 3</div>
@@ -147,35 +156,6 @@
 
         </section>
 
-<style>
-        .s2 {
-            position: relative;
-            height: 100%;
-        }
-
-
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
 
 
 

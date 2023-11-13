@@ -98,16 +98,28 @@ body{
 
 
 .submenu a{
+    /* min-width: 75px; */
     
     margin-top: 50px;
-    margin-right: 10px;
+    margin-right: 35px;
     font-size: 17px;
     text-decoration: none;
     color: black;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.125); */
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+
+
+
+.submenu a::before{
+    content: "> ";
+    padding-right: 5px;
+    
+    text-align: right;
+    color: rgb(80, 83, 86);
 }
 
 .nav {
@@ -189,4 +201,34 @@ body{
     padding: 150px 0; 
     background-color: rgba(104, 104, 104, 0.243);
     position: relative;
+}
+
+
+/* 슬라이더 */
+.s2 {
+    position: relative;
+    height: 100%;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
