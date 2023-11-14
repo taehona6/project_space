@@ -11,15 +11,17 @@
     font-family: "NotoSansKR-Bold";
     src:url('./font/Noto_Sans_KR/static/NotoSansKR-Bold.ttf')
 }
-header{
-    /* height: 86px;  다른 페이지는 있어야됨*/
+
+header {
+    /* height: 86px; */
 }
 
-body{
+body {
     margin: 0;
-    font-family:'NotoSansKR'
+    font-family: 'NotoSansKR'
 }
-.header{
+
+.header {
     position: fixed;
     width: 100%;
     height: 86px;
@@ -33,20 +35,22 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-.nav ul{
+.nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.nav ul li{
+
+.nav ul li {
     width: 100px;
-    height: 86px;    
+    height: 86px;
 }
-.nav ul li a{
+
+.nav ul li a {
     display: block;
     text-decoration: none;
     width: 100px;
@@ -58,31 +62,34 @@ body{
     transition: 0.3s;
     z-index: 101;
 }
-.nav a:hover{
+
+.nav a:hover {
     color: red;
     border-bottom: 4px solid rgba(255, 0, 0, 0.522);
     transition: 0.1s;
 }
 
-.gnb-util ul{
+.gnb-util ul {
     display: flex;
     list-style: none;
-    margin: 0;  
+    margin: 0;
     padding-left: 0;
 }
-.gnb-util ul li{
+
+.gnb-util ul li {
     width: 60px;
 }
-.gnb-util ul div{
+
+.gnb-util ul div {
     display: flex;
     align-items: center;
     height: 86px;
 }
 
 
-.gnb-util a{
+.gnb-util a {
     color: black;
-    transform: translate(0,7%);
+    transform: translate(0, 7%);
 }
 
 
@@ -92,14 +99,14 @@ body{
 }
 
 .header:hover {
-    height: 260px; 
+    height: 260px;
 }
 
 
 
-.submenu a{
+.submenu a {
     /* min-width: 75px; */
-    
+
     margin-top: 50px;
     margin-right: 35px;
     font-size: 17px;
@@ -114,17 +121,17 @@ body{
 
 
 
-.submenu a::before{
+/* .submenu a::before {
     content: "> ";
     padding-right: 5px;
-    
+
     text-align: right;
     color: rgb(80, 83, 86);
-}
+} */
 
 .nav {
     position: relative;
-    
+
 }
 
 
@@ -132,17 +139,25 @@ body{
     position: absolute;
     top: 86px;
     left: 11px;
-    right: 0; 
+    right: 0;
     display: flex;
     /* justify-content: space-around; */
     opacity: 0;
-    max-height: 0; 
-    overflow: hidden; 
+    max-height: 0;
+    overflow: hidden;
     transition: all 0.2s ease-in-out;
 }
 
 
 
+
+
+
+.sub-container {
+    width: 100%;
+    position: relative;
+    /* margin-top: 300px; */
+}
 
 /* 푸터 */
 .logo-container img {
@@ -197,14 +212,192 @@ body{
     height: 100%;
     object-fit: cover;
 }
+
 .section.s3.fp-auto-height {
     padding: 150px 0; 
     background-color: rgba(104, 104, 104, 0.243);
     position: relative;
 }
 
+.about {
+    color: #eb2127;
+    width: 560px;
+    height: 23px;
+    position: relative;
+    left: 100px;
+    top: -420px;
+    font-size: 19px;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+}
 
-/* 슬라이더 */
+.meail {
+    position: absolute;
+    top: 300px;
+    right: 380px;
+    width: 560px;
+    height: 100.78px;
+    font-family: 'NotoSansKR-ExtraBold', sans-serif;
+    color: #181818;
+    font-size: 36px;
+    margin: 0;
+}
+
+.jusic {
+    position: relative;
+    top: -260px;
+    left: 980px;
+    width: 560px;
+    height: 54px;
+    color: #555555;
+    font-size: 18px;
+    font-family: 'NotoSansKR-Regular', sans-serif;
+    margin: 0;
+}
+
+.red-bar {
+    position: absolute;
+    top: 260px;
+    left: 770px;
+    width: 180px;
+    height: 2px;
+    background-color: red;
+    transform: translateY(-50%);
+}
+
+.section.s1 img {
+    margin-left: 270px;
+    width: 610px;
+    height: 510px;
+}
+
+.transparent-box {
+    width: 150px;
+    height: 44px;
+    /* background-color: transparent; */
+    /* border: 1px solid black; */
+    overflow: hidden; 
+    position: relative;
+    left: 978px;
+    top: -180px;
+}
+
+#btn-01 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+    /* border-color: black; */
+    transition: 0.2s;
+}
+
+#btn-01:hover {
+    background-color: red;
+    border-color: red;
+    color: white;
+    transition: 0.2s;
+    border: none;
+}
+
+.section.s1{
+    position: relative;
+    overflow: hidden;
+    background-image: url('../img/본문.png');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.image-text {
+    /* text-align: left; */
+    position: absolute;
+    left: 450px;
+    top: 45%;
+    left: 41%;
+    color: white;
+    text-align: center;
+    font-family: 'NotoSansKR-Light', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+  .image-text2 {
+    left: 450px;
+    position: absolute;
+    /* text-align: left; */
+    top: 50%;
+    left: 41%;
+    color: white;
+    text-align: center;
+    font-family: 'NotoSansKR-SemiBold', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.8;
+    z-index: 1;
+  }
+
+
+
+ .s2 {
+            position: absolute;
+            width: 100%;
+
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+ .slide:nth-child(1) .image-text,
+.slide:nth-child(1) .image-text2 {
+  left: 230px;
+}
+.slide:nth-child(2) .image-text,
+.slide:nth-child(2) .image-text2 {
+  left: 2150px;
+}
+
+.slide:nth-child(3) .image-text,
+.slide:nth-child(3) .image-text2 {
+  left: 4100px;
+}
+
+.slide:nth-child(1) .image-text,
+.slide:nth-child(2) .image-text,
+.slide:nth-child(3) .image-text
+{
+    top: 400px;
+    font-size: 25px;
+}
+
+.slide:nth-child(1) .image-text2,
+.slide:nth-child(2) .image-text2,
+.slide:nth-child(3) .image-text2
+{
+    top: 400px;
+    font-size: 60px;
+} 
+
+
+  
+
+
+  /* 슬라이더 */
 .s2 {
     position: relative;
     height: 100%;
@@ -223,7 +416,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .swiper-slide img {
@@ -231,4 +424,18 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.3s;
 }
+
+
+.swiper-slide img:hover{
+    
+    transform: scale(1.1);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+
+
+
+
