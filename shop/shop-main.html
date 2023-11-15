@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="01shop-default.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="full-page/jquery.fullPage.css">
+    <script src="full-page/jquery.fullPage.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="shop.css">
+    <link href="Icons/icon_kkul.png" rel="shortcut icon" type="image/x-icon">
+    <title>꿀잠 메인</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="head-container">
+            <div class="head-logo">
+                <img src="image/메인로고.png" alt="">
+            </div>
+            <div class="menu-div">
+                <ul class="menu-ul">
+                    <li><a href="javascript:alert('미구현 기능입니다.');">BEST</a></li>
+                    <li><a href="javascript:alert('미구현 기능입니다.');">SALE</a></li>
+                    <li><a href="javascript:alert('미구현 기능입니다.');">BRAND</a></li>
+                    <li><a href="javascript:alert('미구현 기능입니다.');">MAGAZINE</a></li>
+                    <li><a href="javascript:alert('미구현 기능입니다.');">EVENT</a></li>
+                </ul>
+            </div>
+            <div class="side-menu">
+                <ul class="side-menu-ul">
+                    <li><a href="javascript:alert('미구현 기능입니다.');">검색</a></li>
+                    <li><a href="shop-notice-board.html">고객센터</a></li>
+                    <li><a href="shop-login.html">로그인</a></li>
+                    <li><a href="#;" id="side-menu-menu">메뉴</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="notice">
+            <img src="image/신세계.png" alt="">
+        </div>
+    </header>
+
+    <div class="category-container">
+        <div class="category-menu">
+            <ul class="category-nav">
+                <li><a href="category-bed.html" class="category-item">침대</a></li>
+                <li><a href="category-pillow.html" class="category-item">베개</a></li>
+                <li><a href="category-bedding.html" class="category-item">이불</a></li>
+                <li><a href="category-curtain.html" class="category-item">커튼</a></li>
+                <li><a href="category-candle.html" class="category-item">향초</a></li>
+                <li><a href="category-etc.html" class="category-item">기타</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 메뉴 누르면 나오는거 -->
+    <div class="submenu" id="submenu">
+        <div class="submenu-inner">
+
+
+            <div class="submenu-text-container">
+                <div type="button" id="x-btn">X</div>
+                <div class="submenu-text-box">
+                    <a href="shop-notice-board.html" class="submenu-text">주문/배송</a>
+                    <a href="shop-notice-board.html" class="submenu-text">고객센터</a>
+                    <a href="" class="submenu-text">매장안내</a>
+                </div>
+                <div class="submenu-text-box">
+                    <a href="shop-login.html" class="submenu-text">로그인</a>
+                    <a href="shop-reigister.html" class="submenu-text">회원가입</a>
+                </div>
+                <div class="submenu-text-box last-stb">
+                    <a href="../main/main.html" class="submenu-text">KKULJAM</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .submenu {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.412);
+            top: 0px;
+            right: 0px;
+            width: 0px;
+            height: 100%;
+            z-index: 100;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        #x-btn {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .submenu-text-container {
+            width: 300px;
+            position: absolute;
+            top: 84px;
+            left: 70px
+        }
+
+        .submenu-text-box {
+            width: 230px;
+            top: 50px;
+            border-bottom: 1px solid rgba(255, 250, 250, 0.776)
+        }
+
+        .last-stb {
+            border-bottom: none;
+        }
+
+        .submenu-text {
+            width: 90px;
+            font-size: 16px;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: block;
+        }
+    </style>
+
+
+
+    <!-- 메인 -->
+    <main>
+        <!-- 이미지 슬라이드 -->
+
+        <div id="fullpage">
+            <section class="section fp-auto-height">
+                <div class="slide main">
+                    <img src="Slide_image/Slide_image4.png" alt="">
+                </div>
+                <div class="slide main">
+                    <img src="Slide_image/Slide_image3.png" alt="">
+                </div>
+                <div class="slide main">
+                    <img src="Slide_image/Slide_image2.png" alt="">
+                </div>
+                <div class="slide main">
+                    <img src="Slide_image/Slide_image1.png" alt="">
+                </div>
+            </section>
+        </div>
+
+        <!-- 원형 아이콘 카테고리 -->
+
+        <div class="category-horizontal">
+            <div class="category-horizontal-menu">
+                <ul class="category-horizontal-nav">
+                    <a href="#;" class="category-nav-item-pic">
+                        <li class="category-nav-item">러그</li>
+                    </a>
+                    <a href="#;" class="category-nav-item-pic">
+                        <li class="category-nav-item">호텔침구</li>
+                    </a>
+                    <a href="#;" class="category-nav-item-pic">
+                        <li class="category-nav-item">무드등</li>
+                    </a>
+                    <a href="#;" class="category-nav-item-pic">
+                        <li class="category-nav-item">크리스마스</li>
+                    </a>
+                    <a href="#;" class="category-nav-item-pic">
+                        <li class="category-nav-item">그림액자</li>
+                    </a>
+                    <a href="#;" class="category-nav-item-pic">
+                        <li class="category-nav-item">카사미아</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 좌우 스크롤 상품 -->
+
+        <div class="loved-item-container">
+            <p class="loved-item-toptext">LOVED ITEMS</p>
+            <div class="loved-item-list1">
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/쇼파배드1.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">이첸도르프</p>
+                            <p class="loved-item-name">클라우디 2인용 유아쇼파베드</p>
+                            <p class="loved-item-price">26,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/쿠션2.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">이즈잇</p>
+                            <p class="loved-item-name">버블 폼 쿠션 커버</p>
+                            <p class="loved-item-price">26,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/사은품3.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">스펙트럼</p>
+                            <p class="loved-item-name">*사은품증정* 웨이벌리 타탄노트</p>
+                            <p class="loved-item-price">16,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/비누4.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">루시카스</p>
+                            <p class="loved-item-name">라벤더 비누</p>
+                            <p class="loved-item-price">13,900<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/조화5.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">꾸미까</p>
+                            <p class="loved-item-name">가든 라벤더 조화</p>
+                            <p class="loved-item-price">26,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/쇼파6.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">허니듀래빗</p>
+                            <p class="loved-item-name">허니듀래빗 유아 소파 레드</p>
+                            <p class="loved-item-price">26,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- 3갈래 상품 -->
+
+        <div class="three-row-item-container">
+            <p class="three-row-item-toptext">KKULJAM's PICK</p>
+            <div class="three-row-item-list">
+                <div class="three-row-item-menu">
+                    <a href="#;">
+                        <div class="three-row-item-image" style="background-image: url(pick-image/01_라미에스.avif)">
+                            <p class="three-row-item-company">라미에스</p>
+                            <p class="three-row-item-description">공안에 따듯함을 불어넣는 원목가구</p>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/01_1.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">라미에스</p>
+                            <p class="three-row-item-name">애쉬 원목 침대 프레임</p>
+                            <p class="three-row-item-price">820,000</p>
+                            <p class="three-row-item-dc-rate">25%</p>
+                            <p class="three-row-item-dc-price">610,000</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/01-2.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">라미에스</p>
+                            <p class="three-row-item-name">라미에스 세라믹 식탁세트</p>
+                            <p class="three-row-item-price">840,000</p>
+                            <p class="three-row-item-dc-rate">57%</p>
+                            <p class="three-row-item-dc-price">660,000</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/01-3.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">라미에스</p>
+                            <p class="three-row-item-name">안톤 월넛 원목 카페 식탁</p>
+                            <p class="three-row-item-price">410,000</p>
+                            <p class="three-row-item-dc-rate">43%</p>
+                            <p class="three-row-item-dc-price">230,000</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="three-row-item-menu">
+                    <a href="#;">
+                        <div class="three-row-item-image" style="background-image: url(pick-image/01_리슬립2.avif)">
+                            <p class="three-row-item-company">리슬립</p>
+                            <p class="three-row-item-description">수면 전문가가 만드는 맞춤 토퍼</p>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/02-1.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">리슬립</p>
+                            <p class="three-row-item-name">7cm 메모리솜 탄성 토퍼</p>
+                            <p class="three-row-item-price">199,000</p>
+                            <p class="three-row-item-dc-rate">42%</p>
+                            <p class="three-row-item-dc-price">115,000</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/02-2.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">리슬립</p>
+                            <p class="three-row-item-name">자세 맞춤 메모리솜 경추배게</p>
+                            <p class="three-row-item-price">159,000</p>
+                            <p class="three-row-item-dc-rate">56%</p>
+                            <p class="three-row-item-dc-price">68,900</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/02-3.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">리슬립</p>
+                            <p class="three-row-item-name">편한 자세 맞춤 메모리폼 낮은 베개</p>
+                            <p class="three-row-item-price">89,900</p>
+                            <p class="three-row-item-dc-rate">52%</p>
+                            <p class="three-row-item-dc-price">42,900</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="three-row-item-menu">
+                    <a href="#;">
+                        <div class="three-row-item-image" style="background-image: url(pick-image/01_발뮤다3.avif)">
+                            <p class="three-row-item-company">발뮤다</p>
+                            <p class="three-row-item-description">꾸준히 사랑받는 심플 디자인 가전</p>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/03-1.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">발뮤다</p>
+                            <p class="three-row-item-name">발뮤다 NEW 토스터 3.0</p>
+                            <p class="three-row-item-price">399,000</p>
+                            <p class="three-row-item-dc-rate">25%</p>
+                            <p class="three-row-item-dc-price">299,000</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/03-2.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">발뮤다</p>
+                            <p class="three-row-item-name">발뮤다 더 팟 전기 주전자</p>
+                            <p class="three-row-item-price">199,000</p>
+                            <p class="three-row-item-dc-rate">15%</p>
+                            <p class="three-row-item-dc-price">169,000</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/03-3.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">발뮤다</p>
+                            <p class="three-row-item-name">발뮤다 더 브루</p>
+                            <p class="three-row-item-price">779,000</p>
+                            <p class="three-row-item-dc-rate">14%</p>
+                            <p class="three-row-item-dc-price">669,000</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 좌우 스크롤 상품 -->
+
+        <div class="loved-item-container">
+            <p class="loved-item-toptext">NEW IN</p>
+            <div class="loved-item-list2">
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/02_시계1.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">이첸도르프</p>
+                            <p class="loved-item-name">스텔라 LED 시계_마젠타</p>
+                            <p class="loved-item-price">26,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/02_쿠션2.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">아트 스튜디오</p>
+                            <p class="loved-item-name">스위밍 쿠션 커버</p>
+                            <p class="loved-item-price">16,900<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/02_쿠션3.avif " alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">뚜누</p>
+                            <p class="loved-item-name">말 많은 PINK 쿠션</p>
+                            <p class="loved-item-price">29,100<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/02_와인4.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">로우모</p>
+                            <p class="loved-item-name">로우모 핀 트레이 와인핑크</p>
+                            <p class="loved-item-price">47,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/02_찻잔5.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">웨스트프롬</p>
+                            <p class="loved-item-name">우드슬랩 원목 찻상</p>
+                            <p class="loved-item-price">39,900<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/02_체어6.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">어니언</p>
+                            <p class="loved-item-name">래디 쉬우드 체어</p>
+                            <p class="loved-item-price">101,800<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- 3갈래 상품 -->
+
+        <div class="three-row-item-container">
+            <p class="three-row-item-toptext">이 주의 추천 브랜드</p>
+            <div class="three-row-item-list">
+                <div class="three-row-item-menu">
+                    <a href="#;">
+                        <div class="three-row-item-image" style="background-image: url(pick-image/루시카스.avif)">
+                            <p class="three-row-item-company">루시카스</p>
+                            <p class="three-row-item-description">핸드메이드 아트워트 오브제</p>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/2-01-01.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">루시카스</p>
+                            <p class="three-row-item-name">코케시돌L세트 (21종)</p>
+                            <p class="three-row-item-price">248,000</p>
+                            <p class="three-row-item-dc-rate">10%</p>
+                            <p class="three-row-item-dc-price">223,000</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/2-01-02.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">루시카스</p>
+                            <p class="three-row-item-name">코케시돌 앤디워홀</p>
+                            <p class="three-row-item-price">80,000</p>
+                            <p class="three-row-item-dc-rate">10%</p>
+                            <p class="three-row-item-dc-price">72,000</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/2-01-03.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">루시카스</p>
+                            <p class="three-row-item-name">에그홀더 웨딩set</p>
+                            <p class="three-row-item-price">52,000</p>
+                            <p class="three-row-item-dc-rate">5%</p>
+                            <p class="three-row-item-dc-price">49,400</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="three-row-item-menu">
+                    <a href="#;">
+                        <div class="three-row-item-image" style="background-image: url(pick-image/2-02_미스터마리아.avif)">
+                            <p class="three-row-item-company">미스터마리아</p>
+                            <p class="three-row-item-description">사랑스러운 집을 위한 인테리어 조명</p>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/2-02-01.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">미스터마리아</p>
+                            <p class="three-row-item-name">라이트미피</p>
+                            <p class="three-row-item-price">49,000</p>
+                            <p class="three-row-item-dc-rate">10%</p>
+                            <p class="three-row-item-dc-price">44,100</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/2-02-02.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">미스터마리아</p>
+                            <p class="three-row-item-name">라이트라이언</p>
+                            <p class="three-row-item-price">49,000/p>
+                            <p class="three-row-item-dc-rate">10%</p>
+                            <p class="three-row-item-dc-price">44,100</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/2-02-03.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">미스터마리아</p>
+                            <p class="three-row-item-name">라이트스마일리</p>
+                            <p class="three-row-item-price">279,000</p>
+                            <p class="three-row-item-dc-rate">10%</p>
+                            <p class="three-row-item-dc-price">251,100</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                </div>
+                <div class="three-row-item-menu">
+                    <a href="#;">
+                        <div class="three-row-item-image" style="background-image: url(pick-image/2-03_라아무.avif)">
+                            <p class="three-row-item-company">라아무</p>
+                            <p class="three-row-item-description">조형사가 직접 제작하는 석고 디퓨저</p>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/2-03-01.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">라아무</p>
+                            <p class="three-row-item-name">라아무 오너먼트 디퓨저 다비드130ml</p>
+                            <p class="three-row-item-price">38,700</p>
+                            <p class="three-row-item-dc-rate">22%</p>
+                            <p class="three-row-item-dc-price">29,800</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/2-03-02.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">발뮤다</p>
+                            <p class="three-row-item-name">스텐 메쉬트레이 2종세트 대</p>
+                            <p class="three-row-item-price">20,400</p>
+                            <p class="three-row-item-dc-rate">24%</p>
+                            <p class="three-row-item-dc-price">15,400</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                    <a href="#;">
+                        <div class="three-row-item">
+                            <img src="pick-image/2-03-03.avif" alt="" class="three-row-item-img">
+                            <p class="three-row-item-company-sub">발뮤다</p>
+                            <p class="three-row-item-name">스텐 메쉬트레이 2종세트 대</p>
+                            <p class="three-row-item-price">20,400</p>
+                            <p class="three-row-item-dc-rate">24%</p>
+                            <p class="three-row-item-dc-price">15,400</p>
+                            <div class="three-row-item-heart-icon"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 좌우 스크롤 상품 -->
+
+        <div class="loved-item-container">
+            <p class="loved-item-toptext">HOT SALE</p>
+            <div class="loved-item-list3">
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/03_소파1.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">까사미아</p>
+                            <p class="loved-item-name">로네 3인 소파</p>
+                            <p class="loved-item-price">980,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/03_침대2.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">까사미아</p>
+                            <p class="loved-item-name">아틀리에 패브릭 침대 기본형</p>
+                            <p class="loved-item-price">1,150,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/03_침대3.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">라미에스</p>
+                            <p class="loved-item-name">오우드 패브릭 수납 침대</p>
+                            <p class="loved-item-price">549,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/03_침대4.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">라미에스</p>
+                            <p class="loved-item-name">베른 애쉬원목 침대</p>
+                            <p class="loved-item-price">26,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/04_소파5.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">까사미아</p>
+                            <p class="loved-item-name">캄포미니 4인 카우치형</p>
+                            <p class="loved-item-price">1,785,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#;">
+                    <div class="loved-item-menu">
+                        <div class="loved-item-image">
+                            <img src="Slide_image/03_의자6.avif" alt="">
+                        </div>
+                        <div class="loved-item-description">
+                            <p class="loved-item-company">까사미아</p>
+                            <p class="loved-item-name">우스터 1인 리클라이너 배드</p>
+                            <p class="loved-item-price">790,000<img src="Icons/heart.svg" alt=""
+                                    class="loved-item-heart-icon"></p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- top버튼 -->
+        <div style="width: 100px;height: 100px;" class="to-top-btn">
+        <a href="#"><img src="Icons/arrow-up-circle-fill.svg" alt="" class="to-top-btn" style="bottom: 72px;"></a>
+    </div>
+    </main>
+    <!-- 메인 -->
+
+    <footer>
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="image/메인로고.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul class="footer-menu-ul">
+                    <li><a href="#;" class="first">개인정보처리방침</a></li>
+                    <li><a href="#;">서비스 이용약관</a></li>
+                    <li><a href="#;">영상정보처리기기 운영관리방침</a></li>
+                    <li><a href="#;">회사소개</a></li>
+                    <li><a href="#;">채용정보</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+
+                <ul class="footer-info-ul">
+                    <div class="fiu-1">
+                        <li><a href="#;">상호명:(주)꿀잠</a></li>
+                        <li><a href="#;">대표이사:김태환</a></li>
+                        <li><a href="#;">주소:인천시 남동구 논현로106</a></li>
+                    </div>
+                    <div class="fiu-2">
+                        <li><a href="#;">사업자등록번호:120-12-24242</a></li>
+                        <li><a href="#;">통신판매업 신고:2021-서울중구-1960</a></li>
+                        <li><a href="#;">개인정보보호책임자:원종훈</a></li>
+                        <li><a href="#;">사업자 정보확인</a></li>
+                    </div>
+                    <div class="fiu-3">
+                        <li><a href="#;">호스팅제공자:(주)신세계아이앤씨</a></li>
+                        <li><a href="#;">email:kkuljam@.com</a></li>
+                        <li><a href="#;">에스크로 서비스 가입확인</a></li>
+                    </div>
+                </ul>
+
+                <p class="copyright">Copyright@2023 SHINSAGAE CASA Co., Ltd.All rights reserved</p>
+                <div class="footer-isms">
+                    <img src="image/isms.png" alt="">
+                    <p>[인증범위]온라인 쇼핑몰 운영
+                    <p>
+                    <p>[유효기간]2023.11.08 ~ 2026.11.08</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-right">
+
+            <div class="top-as">
+                <a href="#;">까사미아 상품 AS접수 ></a>
+            </div>
+
+            <ul class="ftr">
+                <span class="call">고객문의 대표전화</span> <span>신세계까사 AS전화</span>
+            </ul>
+            <div class="num">
+                <strong class="str-num">1588-1224</strong> <strong class="str-num">1577-0228</strong>
+            </div>
+            <p>평일09:00-18:00(주말 및 공휴일 휴무)</p>
+
+            <div class="footer-btns">
+                <a href="#;">까사미아 대리점 개설안내</a>
+                <a href="#;">꿀잠닷컴 입점문의</a>
+            </div>
+
+            <div class="footer-sns">
+                <a href="https://www.youtube.com/" target="_blank"><img src="image/youtube.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image/instragram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        /*LOVED ITEMS 스크롤 스크립트*/
+        for (let i = 1; i < 4; i++) {
+            const slider = document.querySelector(`.loved-item-list${i}`);
+            console.log(slider);
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            slider.addEventListener('mousedown', e => {
+                isDown = true;
+                slider.classList.add('active');
+                startX = e.pageX - slider.offsetLeft;
+                scrollLeft = slider.scrollLeft;
+            });
+
+            slider.addEventListener('mouseleave', () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+
+            slider.addEventListener('mouseup', () => {
+                isDown = false;
+                slider.classList.remove('active');
+            });
+
+            slider.addEventListener('mousemove', e => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - slider.offsetLeft;
+                const walk = x - startX;
+                slider.scrollLeft = scrollLeft - walk;
+            });
+        }
+        let icons = document.querySelectorAll('.loved-item-heart-icon');
+        let row_icons = document.querySelectorAll('.three-row-item-heart-icon');
+        let heart = [];
+        let row_heart = [];
+        icons.forEach((element,idx) => {
+            heart[idx] = 0;
+            console.log(idx);
+            element.style.opacity="35%";
+            element.addEventListener('click', e=> {
+                console.log(`${e} + ${idx}`);
+                loved(element,idx);
+            })
+        });
+
+        row_icons.forEach((element,idx) => {
+            row_heart[idx] = 0;
+            element.style.opacity="35%";
+            element.addEventListener('click', e=> {
+                console.log(`${e} + ${idx}`);
+                row_loved(element,idx);
+            })
+        });
+
+        function loved(e,idx)
+        {
+            if (heart[idx] == 0) 
+            {
+                e.style.backgroundImage = "url('Icons/heart-fill.svg')";
+                heart[idx] = 1;
+                e.style.opacity="100%";
+            }
+            else if (heart[idx]  == 1)
+            {
+                e.style.backgroundImage = "url('Icons/heart.svg')";
+                heart[idx]  = 0;
+                e.style.opacity="35%";
+            }
+        }
+
+        function row_loved(e,idx)
+        {
+            if (row_heart[idx] == 0) 
+            {
+                e.style.backgroundImage = "url('Icons/heart-fill.svg')";
+                row_heart[idx]= 1;
+                e.style.opacity="100%";
+            }
+            else if (row_heart[idx] == 1)
+            {
+                e.style.backgroundImage = "url('Icons/heart.svg')";
+                row_heart[idx] = 0;
+                e.style.opacity="35%";
+            }
+        }
+
+        document.getElementById('side-menu-menu').addEventListener('click', () => {
+            submenu = document.getElementById('submenu')
+            // submenu.style.display = 'block';  
+            submenu.style.width = '430px';
+        })
+        document.getElementById('x-btn').addEventListener('click', () => {
+            submenu = document.getElementById('submenu')
+            submenu.style.width = '0px';
+        })
+    </script>
+</body>
+
+</html>

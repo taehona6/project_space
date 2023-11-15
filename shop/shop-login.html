@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop-login.css">
+    <link href="Icons/icon_kkul.png" rel="shortcut icon" type="image/x-icon">
+    <title>꿀잠 로그인</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <div class="head-logo">
+                <a href="shop-main.html"><img src="image/메인로고.png" alt=""></a>
+            </div>
+            <div class="menu-div">
+                <ul class="menu-ul">
+                    <li><a href="javascript:alert('미구현 기능입니다.');">BEST</a></li>
+                    <li><a href="javascript:alert('미구현 기능입니다.');">SALE</a></li>
+                    <li><a href="javascript:alert('미구현 기능입니다.');">BRAND</a></li>
+                    <li><a href="javascript:alert('미구현 기능입니다.');">MAGAZINE</a></li>
+                    <li><a href="javascript:alert('미구현 기능입니다.');">EVENT</a></li>
+                </ul>
+            </div>
+            <div class="side-menu">
+                <ul class="side-menu-ul">
+                    <li><a href="javascript:alert('미구현 기능입니다.');">검색</a></li>
+                    <li><a href="shop-notice-board.html">고객센터</a></li>
+                    <li><a href="shop-login.html">로그인</a></li>
+                    <li><a href="#;" id="side-menu-menu">메뉴</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="notice">
+            <img src="image/신세계.png" alt="">
+        </div>
+    </header>
+    <!-- 메뉴 누르면 나오는거 -->
+    <div class="submenu" id="submenu">
+        <div class="submenu-inner">
+
+
+            <div class="submenu-text-container">
+                <div type="button" id="x-btn">X</div>
+                <div class="submenu-text-box">
+                    <a href="shop-notice-board.html" class="submenu-text">주문/배송</a>
+                    <a href="shop-notice-board.html" class="submenu-text">고객센터</a>
+                    <a href="" class="submenu-text">매장안내</a>
+                </div>
+                <div class="submenu-text-box">
+                    <a href="shop-login.html" class="submenu-text">로그인</a>
+                    <a href="shop-reigister.html" class="submenu-text">회원가입</a>
+                </div>
+                <div class="submenu-text-box last-stb">
+                    <a href="shop-main.html" class="submenu-text">KKULJAM</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('side-menu-menu').addEventListener('click', () => {
+            submenu = document.getElementById('submenu')
+            // submenu.style.display = 'block';  
+            submenu.style.width = '430px';
+        })
+        document.getElementById('x-btn').addEventListener('click', () => {
+            submenu = document.getElementById('submenu')
+            submenu.style.width = '0px';
+        })
+
+
+
+    </script>
+
+    <style>
+        .submenu {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.412);
+            top: 0px;
+            right: 0px;
+            width: 0px;
+            height: 100%;
+            z-index: 100;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        #x-btn {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .submenu-text-container {
+            width: 300px;
+            position: absolute;
+            top: 84px;
+            left: 70px
+        }
+
+        .submenu-text-box {
+            width: 230px;
+            top: 50px;
+            border-bottom: 1px solid rgba(255, 250, 250, 0.776)
+        }
+
+        .last-stb {
+            border-bottom: none;
+        }
+
+        .submenu-text {
+            width: 90px;
+            font-size: 16px;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: block;
+        }
+    </style>
+
+    <!-- 메인 -->
+    <main>
+        <div class="login-box">
+            <h2 class="login">로그인</h2>
+
+            <!-- <span class="kkul">꿀잠닷컴 회원</span> -->
+
+            <input type="text" class="login-id" placeholder="아이디">
+            <input type="password" class="login-pw" placeholder="비밀번호">
+
+            <div class="login-option">
+                <a href="">아이디 찾기</a>
+                <p>|</p>
+                <a href="">비밀번호 찾기</a>
+            </div>
+            <div class="member-login"></div>
+
+            <a href="shop-main.html"><button type="submit">로그인</button></a>
+
+            <div class="login-other">
+                <a href="">다른 방법으로 로그인</a>
+            </div>
+
+            <div class="login-others">
+                <div class="login-others-icon">
+                    <a href="https://www.naver.com/" target="_blank">
+                        <img src="image/naver.png" alt="">
+                    </a>
+                    <a href="https://www.kakaocorp.com/page/service/service/KakaoTalk" target="_blank">
+                        <img src="image/kakao.png" alt="">
+                    </a>
+                </div>
+                <div class="login-others-non">
+                    <a href="">비회원 주문조회></a>
+                </div>
+            </div>
+
+            <a href="shop-reigister.html" class="join-membership">꿀잠 회원 가입하기></a>
+
+        </div>
+    </main>
+    <!-- 메인 -->
+
+    <footer>
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="image/메인로고.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul class="footer-menu-ul">
+                    <li><a href="" class="first">개인정보처리방침</a></li>
+                    <li><a href="">서비스 이용약관</a></li>
+                    <li><a href="">영상정보처리기기 운영관리방침</a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">채용정보</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+
+                <ul class="footer-info-ul">
+                    <div class="fiu-1">
+                        <li><a href="">상호명:(주)꿀잠</a></li>
+                        <li><a href="">대표이사:김태환</a></li>
+                        <li><a href="">주소:인천시 남동구 논현로106</a></li>
+                    </div>
+                    <div class="fiu-2">
+                        <li><a href="">사업자등록번호:120-12-24242</a></li>
+                        <li><a href="">통신판매업 신고:2021-서울중구-1960</a></li>
+                        <li><a href="">개인정보보호책임자:원종훈</a></li>
+                        <li><a href="">사업자 정보확인</a></li>
+                    </div>
+                    <div class="fiu-3">
+                        <li><a href="">호스팅제공자:(주)신세계아이앤씨</a></li>
+                        <li><a href="">email:kkuljam@.com</a></li>
+                        <li><a href="">에스크로 서비스 가입확인</a></li>
+                    </div>
+                </ul>
+
+                <p class="copyright">Copyright@2023 SHINSAGAE CASA Co., Ltd.All rights reserved</p>
+                <div class="footer-isms">
+                    <img src="image/isms.png" alt="">
+                    <p>[인증범위]온라인 쇼핑몰 운영
+                    <p>
+                    <p>[유효기간]2023.11.08 ~ 2026.11.08</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-right">
+
+            <div class="top-as">
+                <a href="">까사미아 상품 AS접수 ></a>
+            </div>
+
+            <ul class="ftr">
+                <span class="call">고객문의 대표전화</span> <span>신세계까사 AS전화</span>
+            </ul>
+            <div class="num">
+                <strong class="str-num">1588-1224</strong> <strong class="str-num">1577-0228</strong>
+            </div>
+            <p>평일09:00-18:00(주말 및 공휴일 휴무)</p>
+
+            <div class="footer-btns">
+                <a href="">까사미아 대리점 개설안내</a>
+                <a href="">꿀잠닷컴 입점문의</a>
+            </div>
+
+            <div class="footer-sns">
+                <a href="https://www.youtube.com/" target="_blank"><img src="image/youtube.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image/instragram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

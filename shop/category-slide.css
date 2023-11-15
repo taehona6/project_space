@@ -1,0 +1,29 @@
+.fp-controlArrow.fp-prev {
+    left: 0;
+    border: none;
+    width: 100px;
+    height: 310px;
+    transform: translate(0%,-120px);
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(128, 128, 128, 0);
+    cursor: pointer;
+}
+
+.fp-controlArrow.fp-prev:hover{
+    background-color: rgba(128, 128, 128, 0.75);
+}
+
+.fp-controlArrow.fp-next {
+    right: 0;
+    border: none;
+    width: 100px;
+    height: 310px;
+    border-radius: 0px 10px 10px 0px;
+    transform: translate(0%,-120px);
+    background-color: rgba(128, 128, 128, 0);
+    cursor: pointer;
+}
+
+.fp-controlArrow.fp-next:hover{
+    background-color: rgba(128, 128, 128, 0.75);
+}

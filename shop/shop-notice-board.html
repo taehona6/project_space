@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop-notice-board.css">
+    <link href="Icons/icon_kkul.png" rel="shortcut icon" type="image/x-icon">
+    <title>꿀잠 게시판</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <div class="head-logo">
+                <a href="shop-main.html"><img src="image/메인로고.png" alt=""></a>
+            </div>
+            <div class="menu-div">
+                <ul class="menu-ul">
+                    <li><a href="#">BEST</a></li>
+                    <li><a href="#">SALE</a></li>
+                    <li><a href="#">BRAND</a></li>
+                    <li><a href="#">MAGAZINE</a></li>
+                    <li><a href="#">EVENT</a></li>
+                </ul>
+            </div>
+            <div class="side-menu">
+                <ul class="side-menu-ul">
+                    <li><a href="javascript:alert('미구현 기능입니다.');">검색</a></li>
+                    <li><a href="shop-notice-board.html">고객센터</a></li>
+                    <li><a href="shop-login.html">로그인</a></li>
+                    <li><a href="#;" id="side-menu-menu">메뉴</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="notice">
+            <img src="image/신세계.png" alt="">
+        </div>
+    </header>
+    <div class="category-container">
+        <div class="category-menu">
+            <ul class="category-nav">
+                <li><a href="category-bed.html" class="category-item">침대</a></li>
+                <li><a href="category-pillow.html" class="category-item">베개</a></li>
+                <li><a href="category-bedding.html" class="category-item">이불</a></li>
+                <li><a href="category-curtain.html" class="category-item">커튼</a></li>
+                <li><a href="category-candle.html" class="category-item">향초</a></li>
+                <li><a href="category-etc.html" class="category-item">기타</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 메뉴 누르면 나오는거 -->
+    <div class="submenu" id="submenu">
+        <div class="submenu-inner">
+
+
+            <div class="submenu-text-container">
+                <div type="button" id="x-btn">X</div>
+                <div class="submenu-text-box">
+                    <a href="shop-notice-board.html" class="submenu-text">주문/배송</a>
+                    <a href="shop-notice-board.html" class="submenu-text">고객센터</a>
+                    <a href="" class="submenu-text">매장안내</a>
+                </div>
+                <div class="submenu-text-box">
+                    <a href="shop-login.html" class="submenu-text">로그인</a>
+                    <a href="shop-reigister.html" class="submenu-text">회원가입</a>
+                </div>
+                <div class="submenu-text-box last-stb">
+                    <a href="shop-main.html" class="submenu-text">KKULJAM</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('side-menu-menu').addEventListener('click', () => {
+            submenu = document.getElementById('submenu')
+            // submenu.style.display = 'block';  
+            submenu.style.width = '430px';
+        })
+        document.getElementById('x-btn').addEventListener('click', () => {
+            submenu = document.getElementById('submenu')
+            submenu.style.width = '0px';
+        })
+
+
+
+    </script>
+
+    <style>
+        .submenu {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.412);
+            top: 0px;
+            right: 0px;
+            width: 0px;
+            height: 100%;
+            z-index: 100;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        #x-btn {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .submenu-text-container {
+            width: 300px;
+            position: absolute;
+            top: 84px;
+            left: 70px
+        }
+
+        .submenu-text-box {
+            width: 230px;
+            top: 50px;
+            border-bottom: 1px solid rgba(255, 250, 250, 0.776)
+        }
+
+        .last-stb {
+            border-bottom: none;
+        }
+
+        .submenu-text {
+            width: 90px;
+            font-size: 16px;
+            color: white;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            display: block;
+        }
+    </style>
+
+
+
+    <!-- 메인 -->
+    <main>
+
+        <div class="main-container">
+            <h2>고객센터</h2>
+
+            <div class="faq-container">
+                <div class="category-list">
+                    <a href="#;">
+                        <p class="firstP">공지사항</p>
+                    </a>
+                    <p style="color: black; font-weight: bold;">Q&A</p>
+                    <a href="#;">
+                        <p>FAQ</p>
+                    </a>
+                    <a href="#;">
+                        <p>고객의 소리</p>
+                    </a>
+                    <a href="#;">
+                        <p>입점문의</p>
+                    </a>
+                    <a href="#;">
+                        <p>멤버십 안내</p>
+                    </a>
+                    <p style="color: black; font-weight: bold;">고객센터<span style="font-size: 30px; font-weight: bold; color: black;"><br>1566-1224</span></p>
+
+                </div>
+                <div class="list-box">
+
+                    <div class="faq-choose">
+                        <p>Q&A</p>
+                        <p style="color: gray; font-size: 10px;     margin-bottom: 20px;">구매하시려는 상품에 대해 궁금한 점이 있으신 경우
+                            문의해주세요</p>
+                        <span style="color: black; font-size: 20px; font-weight: bold;"><a href="#;">전체</span>
+                        <a href="#;"><span>상품</span></a>
+                        <a href="#;"> <span>배송</span></a>
+                        <a href="#;"><span>주문/결제</span></a>
+                        <a href="#;"><span>반품/교환/환불</span></a>
+                        <a href="#;"><span>기타</span></a>
+                    </div>
+
+                    <div class="input-box">
+                        <div class="img-div">
+                            <img src="image/메인로고white.png" alt="">
+                        </div>
+                        <div class="input-text">
+                            <input type="text" id="qna-writer" style="width: 125px; padding-left: 10px;"
+                                placeholder="이름">
+                        </div>
+                        <div class="input-text">
+                            <input type="text" id="qna-add-text" placeholder="문의할 내용을 입력해주세요."
+                                style="padding-left: 10px;">
+                        </div>
+                        <div class="div-btn">
+                            <button type="button" onclick="Add_qnaList();">등록하기</button>
+                        </div>
+                    </div>
+
+                    <div class="qna-box">
+                        <ul id="qna-list" class="qna-list">
+                            <div id="qna1">
+                                <li><span>김태환 :</span> 침대가 왜캐 비싼가요?;;<button type="button" value="1"
+                                        onclick="Del_qnsList(value)">삭제</button> </li>
+                            </div>
+                            <div id="qna2">
+                                <li><span>김지훈 :</span> 더럽게 비싸네요 여기선안살듯;;;<button type="button" value="2"
+                                        onclick="Del_qnsList(value)">삭제</button> </li>
+                            </div>
+                            <div id="qna3">
+                                <li><span>원종훈 :</span> 침대 푹신한가요????<button type="button" value="3"
+                                        onclick="Del_qnsList(value)">삭제</button></li>
+                            </div>
+                            <div id="qna4">
+                                <li><span>김수진 :</span> 480개월 할부 되나요???????<button type="button" value="4"
+                                        onclick="Del_qnsList(value)">삭제</button></li>
+                            </div>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- 메인 -->
+
+    <footer>
+        <div class="footer-left">
+            <div class="footer-logo">
+                <img src="image/메인로고.png" alt="">
+            </div>
+            <div class="footer-menu">
+                <ul class="footer-menu-ul">
+                    <li><a href="" class="first">개인정보처리방침</a></li>
+                    <li><a href="">서비스 이용약관</a></li>
+                    <li><a href="">영상정보처리기기 운영관리방침</a></li>
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">채용정보</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+
+                <ul class="footer-info-ul">
+                    <div class="fiu-1">
+                        <li><a href="">상호명:(주)꿀잠</a></li>
+                        <li><a href="">대표이사:김태환</a></li>
+                        <li><a href="">주소:인천시 남동구 논현로106</a></li>
+                    </div>
+                    <div class="fiu-2">
+                        <li><a href="">사업자등록번호:120-12-24242</a></li>
+                        <li><a href="">통신판매업 신고:2021-서울중구-1960</a></li>
+                        <li><a href="">개인정보보호책임자:원종훈</a></li>
+                        <li><a href="">사업자 정보확인</a></li>
+                    </div>
+                    <div class="fiu-3">
+                        <li><a href="">호스팅제공자:(주)신세계아이앤씨</a></li>
+                        <li><a href="">email:kkuljam@.com</a></li>
+                        <li><a href="">에스크로 서비스 가입확인</a></li>
+                    </div>
+                </ul>
+
+                <p class="copyright">Copyright@2023 SHINSAGAE CASA Co., Ltd.All rights reserved</p>
+                <div class="footer-isms">
+                    <img src="image/isms.png" alt="">
+                    <p>[인증범위]온라인 쇼핑몰 운영
+                    <p>
+                    <p>[유효기간]2023.11.08 ~ 2026.11.08</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-right">
+
+            <div class="top-as">
+                <a href="">까사미아 상품 AS접수 ></a>
+            </div>
+
+            <ul class="ftr">
+                <span class="call">고객문의 대표전화</span> <span>신세계까사 AS전화</span>
+            </ul>
+            <div class="num">
+                <strong class="str-num">1588-1224</strong> <strong class="str-num">1577-0228</strong>
+            </div>
+            <p>평일09:00-18:00(주말 및 공휴일 휴무)</p>
+
+            <div class="footer-btns">
+                <a href="">까사미아 대리점 개설안내</a>
+                <a href="">꿀잠닷컴 입점문의</a>
+            </div>
+
+            <div class="footer-sns">
+                <a href="https://www.youtube.com/" target="_blank"><img src="image/youtube.png" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image/instragram.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let qna_size = 4;
+        function Add_qnaList() {
+            qna_size += 1;
+            let qnalist = document.getElementById('qna-list');
+            let addlist = document.getElementById('qna-writer').value;
+            addlist += ` : ${document.getElementById('qna-add-text').value}`;
+            // <div>
+            //     <li><span>안녕하세요 문의입니다4.</span><button type="button">삭제</button> </li>
+            // </div>
+            qnalist.innerHTML += `
+            <div id="qna${qna_size}">
+                <li>
+                    <span>
+                    ${addlist}
+                    </span>
+                    <button type="button" value="${qna_size}"onclick="Del_qnsList(value)">
+                    삭제
+                    </button>
+                </li>
+            </div>
+            `;
+            document.getElementById('qna-writer').value=" ";
+            document.getElementById('qna-add-text').value=" ";
+        }
+        function Del_qnsList(valu) {
+            //.document.getElementById('itemList').removeChild(document.getElementById(`cont${a}`));
+            let qnalist = document.getElementById(`qna-list`).removeChild(document.getElementById(`qna${valu}`))
+
+            qnalist.innerHTML = ` `;
+            qna_size -= 1;
+        }
+    </script>
+</body>
+
+</html>
