@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKULJAM</title>
+    <link rel="icon" href="image/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="full-page/jquery.fullPage.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="full-page/jquery.fullPage.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="main.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="main.html"><img src="image/logo-black.png" alt="" id="logo-img"></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li data-submenu="submenu1"><a href="about.html" class="nav-a">회사소개</a></li>
+                        <li data-submenu="submenu2"><a href="brandstory.html" class="nav-a">브랜드</a></li>
+                        <li data-submenu="submenu3"><a href="notice.html" class="nav-a">공지사항</a></li>
+                        <li data-submenu="submenu4"><a href="support.html" class="nav-a">고객지원</a></li>
+                        <li data-submenu="submenu5"><a href="financial.html" class="nav-a">투자정보</a></li>
+                    </ul>
+
+                    <div id="submenu1" class="submenu">
+                        <a href="about.html">>&nbsp&nbsp&nbsp&nbspAbout 꿀잠</a>
+                        <a href="greeting.html">>&nbsp&nbsp&nbsp&nbspCEO 인사말</a>
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp연혁</a>
+                    </div>
+
+                    <div id="submenu2" class="submenu">
+                        <a href="brandstory.html">>&nbsp&nbsp&nbsp&nbsp브랜드 스토리</a>
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp국내 브랜드</a>
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp글로벌 브랜드</a>
+                    </div>
+                    <div id="submenu3" class="submenu">
+                        <a href="notice.html">>&nbsp&nbsp&nbsp&nbsp공지사항</a>
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp뉴스</a>
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp이벤트</a>
+
+                    </div>
+                    <div id="submenu4" class="submenu">
+                        <a href="support.html">>&nbsp&nbsp&nbsp&nbsp1:1 문의</a>
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp자주 묻는 질문</a>
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp자료실</a>
+
+                    </div>
+                    <div id="submenu5" class="submenu">
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp재무 정보</a>
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp주가 정보</a>
+                        <a href="#">>&nbsp&nbsp&nbsp&nbsp공시/공고</a>
+                    </div>
+
+                </div>
+                <div class="gnb-util">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="../shop/shop-main.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                        
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <script>
+        document.querySelectorAll('.nav ul li').forEach(function (menuItem) {
+            var submenuId = menuItem.dataset.submenu;
+            var submenu = document.getElementById(submenuId);
+
+            menuItem.addEventListener('mouseover', function () {
+                submenu.style.opacity = '1';
+                submenu.style.maxHeight = '500px';
+            });
+
+            submenu.addEventListener('mouseover', function () {
+                submenu.style.opacity = '1';
+                submenu.style.maxHeight = '500px';
+            });
+
+            menuItem.addEventListener('mouseout', function () {
+                submenu.style.opacity = '0';
+                submenu.style.maxHeight = '0';
+            });
+
+            submenu.addEventListener('mouseout', function () {
+                submenu.style.opacity = '0';
+                submenu.style.maxHeight = '0';
+            });
+        });
+
+
+    </script>
+
+
+
+    <div id="fullpage">
+        <section class="section s0">
+            <div class="slide">               
+                <img src="image/이미지3-투명도조절.png" alt="" width="100%" height="100%">  
+                <p class="image-text">더 가치있는 미래를 위해 끊임없이 도전하고 변화합니다.</p>
+                <p class="image-text2">KEEP ON GOING</p>
+            </div>
+            <div class="slide">                
+                <img src="image/이미지2-투명도조절.png" alt="" width="100%" height="100%">    
+                <p class="image-text">한발앞서 생각하며 더 넓은 세계로 향합니다.</p>
+                <p class="image-text2">ABOVE THE LINE</p>
+            </div>
+            <div class="slide">
+                <img src="image/이미지1-투명도조절.png" alt="" width="100%" height="100%">
+                <p class="image-text">당신의 삶과 항상 함께합니다.</p>
+                <p class="image-text2">Be Your Life, KKULJAM</p>
+            </div>
+        </section>
+        <section class="section s1">
+            <img src="image/about-kkuljam-left.jpg" alt="img xxx">
+            <span class="about">ABOUT KKULJAM</span>
+            <div class="meail">매일이 더 즐겁고 편리하게, 일상의 행복을 디자인하다.</div>
+            <div class="jusic">주식회사 꿀잠은 포근함과 편안함을 동시에 추구합니다. 
+                일상을 더 풍요롭게 만드는 포근함과, 하루하루가 편안해지는 제품으로 고객에게 행복을 선사합니다.</div>
+                <div class="transparent-box">
+                    <a href="about.html">
+                        <button type="button" id="btn-01">MORE VIEW</button>
+                    </a>
+                </div>     
+        </section>
+        <section class="section s2">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <a href="../shop/category-bed.html" class="swiper-slide"><img src="image/main-images/image01-침실.png" alt=""></a>
+                    <a href="../shop/category-pillow.html" class="swiper-slide"><img src="image/main-images/image02-베개.jpg" alt=""></a>
+                    <a href="../shop/category-etc.html" class="swiper-slide"><img src="image/main-images/image03-잠옷.jpg" alt=""></a>
+                    <a href="../shop/category-bedding.html" class="swiper-slide"><img src="image/main-images/image04-이불.jpg" alt=""></a>
+                    <a href="../shop/category-candle.html" class="swiper-slide"><img src="image/main-images/image05-향초.jpg" alt=""></a>
+                    <a href="../shop/category-candle.html" class="swiper-slide"><img src="image/main-images/image06-디퓨저.jpg" alt=""></a>
+                    <a href="../shop/category-etc.html" class="swiper-slide"><img src="image/main-images/image07-무드등.jpg" alt=""></a>
+                    <a href="../shop/category-etc.html" class="swiper-slide"><img src="image/main-images/image08-무드등.jpg" alt=""></a>
+                    <a href="../shop/category-etc.html" class="swiper-slide"><img src="image/main-images/image10-책.jpg" alt=""></a>
+                    <a href="../shop/category-etc.html" class="swiper-slide"><img src="image/main-images/image11-커튼.jpg" alt=""></a>
+                    <a href="../shop/category-etc.html" class="swiper-slide"><img src="image/main-images/image12-오일.jpg" alt=""></a>
+                    
+                </div>
+            </div>
+
+        </section>
+        <section class="section s3 fp-auto-height">
+            <div class="logo-container">
+                <img src="image/logo-black.png" alt="logo xx">
+            </div>
+            <div class="text-container">
+                <p>상호 : 주식회사 꿀잠 | 대표이사 : 김태환 | 개인정보관리책임자 : 원종훈 | 관리자 메일 : kkuljam2023@kkj.co.kr (제휴, 상담문의 불가)<br>
+                    통신판매신고 : 2020-인천남동-0310 | 본사 : 인천광역시 남동구 인주대로 593 엔타스빌딩 16층 |사업자 등록번호 : 106-86-01413<br>
+                    서비스센터 : 1644-0844 업무시간 : 09:00~17:20 점심시간 : 11:50~12:30 (공휴일 및 토/일 휴무)</p>
+                <br>
+                <p>Copyright ⓒ 2020 KKULJAM Co., Ltd. All Rights Reserved.</p>
+            </div>
+            <div class="image-container">
+                <a href="page1.html"><img src="image/facebook.png" alt="facebook"></a>
+                <a href="page2.html"><img src="image/instagram.png" alt="instagram"></a>
+                <a href="page3.html"><img src="image/kakaotalk.png" alt="kakako"></a>
+                <a href="page3.html"><img src="image/naver.png" alt="naver"></a>
+            </div>
+        </section>    
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

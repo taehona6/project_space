@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항 | KKULJAM</title>
+    <link rel="icon" href="image/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="notice.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="main.html"><img src="image/logo-black.png" alt="" id="logo-img"></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li data-submenu="submenu1"><a href="about.html" class="nav-a">회사소개</a></li>
+                        <li data-submenu="submenu2"><a href="brandstory.html" class="nav-a">브랜드</a></li>
+                        <li data-submenu="submenu3"><a href="notice.html" class="nav-a">공지사항</a></li>
+                        <li data-submenu="submenu4"><a href="support.html" class="nav-a">고객지원</a></li>
+                        <li data-submenu="submenu5"><a href="financial.html" class="nav-a">투자정보</a></li>
+                    </ul>
+
+                    <div id="submenu1" class="submenu">
+                        <a href="about.html">About 꿀잠</a>
+                        <a href="greeting.html">CEO 인사말</a>
+                        <a href="#">연혁</a>
+                    </div>
+
+                    <div id="submenu2" class="submenu">
+                        <a href="brandstory.html">브랜드 스토리</a>
+                        <a href="#">국내 브랜드</a>
+                        <a href="#">글로벌 브랜드</a>
+                    </div>
+                    <div id="submenu3" class="submenu">
+                        <a href="notice.html">공지사항</a>
+                        <a href="#">뉴스</a>
+                        <a href="#">이벤트</a>
+
+                    </div>
+                    <div id="submenu4" class="submenu">
+                        <a href="support.html">1:1 문의</a>
+                        <a href="#">자주 묻는 질문</a>
+                        <a href="#">자료실</a>
+
+                    </div>
+                    <div id="submenu5" class="submenu">
+                        <a href="#">재무 정보</a>
+                        <a href="#">주가 정보</a>
+                        <a href="#">공시/공고</a>
+                    </div>
+
+                </div>
+                <div class="gnb-util">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="../shop/shop-main.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                        
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <script>
+        document.querySelectorAll('.nav ul li').forEach(function (menuItem) {
+            var submenuId = menuItem.dataset.submenu;
+            var submenu = document.getElementById(submenuId);
+
+            menuItem.addEventListener('mouseover', function () {
+                submenu.style.opacity = '1';
+                submenu.style.maxHeight = '500px';
+            });
+
+            submenu.addEventListener('mouseover', function () {
+                submenu.style.opacity = '1';
+                submenu.style.maxHeight = '500px';
+            });
+
+            menuItem.addEventListener('mouseout', function () {
+                submenu.style.opacity = '0';
+                submenu.style.maxHeight = '0';
+            });
+
+            submenu.addEventListener('mouseout', function () {
+                submenu.style.opacity = '0';
+                submenu.style.maxHeight = '0';
+            });
+        });
+
+
+    </script>
+
+    <main>
+        
+        <div class="banner">
+            <div class="location">
+                <div class="location-inner">
+                    공지사항 > 공지사항
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="section01">
+            <div class="section01-white-box">
+                <div class="search-box">
+                    <select name="" id="" class="select-box">
+                        <option value="">제목</option>
+                        <option value="">내용</option>
+                        <option value="">제목+내용</option>
+                        <option value="">글쓴이</option>
+                    </select>
+                    <input type="text" class="input-box" placeholder="검색어를 입력해주세요"><button class="btn">검색</button>
+                </div>
+                
+                <div class="table-box">
+                    <table>
+                        <tr>
+                            <td class="td-datetime">
+                                <span>05</span><br>
+                                <span>2023.06</span>
+                            </td>
+                            <td>
+                                <a href="">
+                                    <strong class="notice_icon">공지</strong>
+                                    가격 인상 안내
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-datetime">
+                                <span>12</span><br>
+                                <span>2023.02</span>
+                            </td>
+                            <td>
+                                <a href="">
+                                    <strong class="notice_icon">공지</strong>
+                                    신규 브랜드 론칭
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-datetime">
+                                <span>07</span><br>
+                                <span>2022.10</span>
+                            </td>
+                            <td>
+                                <a href="">
+                                    <strong class="notice_icon">공지</strong>
+                                    (주)꿀잠 사칭 계정 주의하세요!
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="section s3 fp-auto-height">
+        <div class="logo-container">
+            <img src="image/logo-black.png" alt="logo xx">
+        </div>
+        <div class="text-container">
+            <p>상호 : 주식회사 꿀잠 | 대표이사 : 김태환 | 개인정보관리책임자 : 원종훈 | 관리자 메일 : kkuljam2023@kkj.co.kr (제휴, 상담문의 불가)<br>
+                통신판매신고 : 2020-인천남동-0310 | 본사 : 인천광역시 남동구 인주대로 593 엔타스빌딩 16층 |사업자 등록번호 : 106-86-01413<br>
+                서비스센터 : 1644-0844 업무시간 : 09:00~17:20 점심시간 : 11:50~12:30 (공휴일 및 토/일 휴무)</p>
+            <br>
+            <p>Copyright ⓒ 2020 KKULJAM Co., Ltd. All Rights Reserved.</p>
+        </div>
+        <div class="image-container">
+            <a href="page1.html"><img src="image/facebook.png" alt="facebook"></a>
+            <a href="page2.html"><img src="image/instagram.png" alt="instagram"></a>
+            <a href="page3.html"><img src="image/kakaotalk.png" alt="kakako"></a>
+            <a href="page3.html"><img src="image/naver.png" alt="naver"></a>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개 | KKULJAM</title>
+    <link rel="icon" href="image/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="financial.css">
+    <script src="financial.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="main.html"><img src="image/logo-black.png" alt="" id="logo-img"></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li data-submenu="submenu1"><a href="about.html" class="nav-a">회사소개</a></li>
+                        <li data-submenu="submenu2"><a href="brandstory.html" class="nav-a">브랜드</a></li>
+                        <li data-submenu="submenu3"><a href="notice.html" class="nav-a">공지사항</a></li>
+                        <li data-submenu="submenu4"><a href="support.html" class="nav-a">고객지원</a></li>
+                        <li data-submenu="submenu5"><a href="financial.html" class="nav-a">투자정보</a></li>
+                    </ul>
+
+                    <div id="submenu1" class="submenu">
+                        <a href="about.html">About 꿀잠</a>
+                        <a href="greeting.html">CEO 인사말</a>
+                        <a href="#">연혁</a>
+                    </div>
+
+                    <div id="submenu2" class="submenu">
+                        <a href="brandstory.html">브랜드 스토리</a>
+                        <a href="#">국내 브랜드</a>
+                        <a href="#">글로벌 브랜드</a>
+                    </div>
+                    <div id="submenu3" class="submenu">
+                        <a href="notice.html">공지사항</a>
+                        <a href="#">뉴스</a>
+                        <a href="#">이벤트</a>
+
+                    </div>
+                    <div id="submenu4" class="submenu">
+                        <a href="support.html">1:1 문의</a>
+                        <a href="#">자주 묻는 질문</a>
+                        <a href="#">자료실</a>
+
+                    </div>
+                    <div id="submenu5" class="submenu">
+                        <a href="#">재무 정보</a>
+                        <a href="#">주가 정보</a>
+                        <a href="#">공시/공고</a>
+                    </div>
+
+                </div>
+                <div class="gnb-util">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="../shop/shop-main.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <script>
+        document.querySelectorAll('.nav ul li').forEach(function (menuItem) {
+            var submenuId = menuItem.dataset.submenu;
+            var submenu = document.getElementById(submenuId);
+
+            menuItem.addEventListener('mouseover', function () {
+                submenu.style.opacity = '1';
+                submenu.style.maxHeight = '500px';
+            });
+
+            submenu.addEventListener('mouseover', function () {
+                submenu.style.opacity = '1';
+                submenu.style.maxHeight = '500px';
+            });
+
+            menuItem.addEventListener('mouseout', function () {
+                submenu.style.opacity = '0';
+                submenu.style.maxHeight = '0';
+            });
+
+            submenu.addEventListener('mouseout', function () {
+                submenu.style.opacity = '0';
+                submenu.style.maxHeight = '0';
+            });
+        });
+
+
+    </script>
+
+    <main>
+
+        <div class="banner">
+            <div class="location">
+                <div class="location-inner">
+                    투자정보 > 재무제표
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section01">
+            <div class="section01-white-box">
+                <div class="table-wrap">
+                    <ul>
+                        <li><a href="#" onclick="showTable('table1',1);" class="table-li">연결 재무 제표</a></li>
+                        <p>|</p>
+                        <li><a href="#" onclick="showTable('table2',2);" class="table-li">별도 재무 제표</a></li>
+                    </ul>
+                </div>
+                <div class="table-content" id="table1">
+                    <table>
+                        <div style="text-align: right; margin-bottom: 10px;">
+                            (단위: 천원)
+                        </div>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>2020년</th>
+                                <th>2021년</th>
+                                <th>2022년</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-header='구분'><strong>[유동자산]</strong></td>
+                                <td data-header='2020년'><strong>125,633,192</strong></td>
+                                <td data-header='2021년'><strong>94,420,577</strong></td>
+                                <td data-header='2022년'><strong>61,135,675</strong></td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>현금및현금성자산</td>
+                                <td data-header='2020년'>50,858,098</td>
+                                <td data-header='2021년'>33,596,594</td>
+                                <td data-header='2022년'>7,183,597</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>단기금융상품</td>
+                                <td data-header='2020년'>503,840</td>
+                                <td data-header='2021년'>12,931,850</td>
+                                <td data-header='2022년'>17,000,182</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>매출채권</td>
+                                <td data-header='2020년'>43,232,158</td>
+                                <td data-header='2021년'>14,050,716</td>
+                                <td data-header='2022년'>13,123,096</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>재고자산</td>
+                                <td data-header='2020년'>27,072,463</td>
+                                <td data-header='2021년'>27,934,563</td>
+                                <td data-header='2022년'>19,530,294</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>기타유동자산</td>
+                                <td data-header='2020년'>3,966,601</td>
+                                <td data-header='2021년'>5,853,319</td>
+                                <td data-header='2022년'>4,298,506</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'><strong>[비유동자산]</strong></td>
+                                <td data-header='2020년'><strong>22,098,075</strong></td>
+                                <td data-header='2021년'><strong>29,777,155</strong></td>
+                                <td data-header='2022년'><strong>38,591,330</strong></td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>장기금융상품</td>
+                                <td data-header='2020년'>22,302,133</td>
+                                <td data-header='2021년'>29,954,760</td>
+                                <td data-header='2022년'>38,690,709</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>투자부동산</td>
+                                <td data-header='2020년'>152,316</td>
+                                <td data-header='2021년'>152,316</td>
+                                <td data-header='2022년'>152,316</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>유형자산</td>
+                                <td data-header='2020년'>19,141,152</td>
+                                <td data-header='2021년'>26,136,594</td>
+                                <td data-header='2022년'>36,567,956</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>사용권자산</td>
+                                <td data-header='2020년'>739,808</td>
+                                <td data-header='2021년'>1,478,705</td>
+                                <td data-header='2022년'>577,727</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>무형자산</td>
+                                <td data-header='2020년'>359,997</td>
+                                <td data-header='2021년'>350,648</td>
+                                <td data-header='2022년'>264,454</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>이연법인세자산</td>
+                                <td data-header='2020년'>713,333</td>
+                                <td data-header='2021년'>568,597</td>
+                                <td data-header='2022년'>-</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>기타비유동자산</td>
+                                <td data-header='2020년'>1,143,364</td>
+                                <td data-header='2021년'>1,267,900</td>
+                                <td data-header='2022년'>1,128,256</td>
+                            </tr>
+                            <tr>
+                                <td data-header='자산총계'>자산총계</td>
+                                <td data-header='자산총계'>147,716,973</td>
+                                <td data-header='자산총계'>124,184,059</td>
+                                <td data-header='자산총계'>99,727,005</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[유동부채]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[비유동부재]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='부채총계'>부채종계</td>
+                                <td data-header='부채총계'>52,920,057</td>
+                                <td data-header='부채총계'>32,763,316</td>
+                                <td data-header='부채총계'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[자본금]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[주식발행초과금]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[이익잉여금]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[기타자본항목]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='자본총계'>자본종계</td>
+                                <td data-header='자본총계'>52,920,057</td>
+                                <td data-header='자본총계'>32,763,316</td>
+                                <td data-header='자본총계'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>매출액</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>매출총이익</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>영업이익</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>당기순이익</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-content" id="table2">
+                    <table>
+                        <div style="text-align: right; margin-bottom: 10px;">
+                            (단위: 천원)
+                        </div>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>2020년</th>
+                                <th>2021년</th>
+                                <th>2022년</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-header='구분'><strong>[유동자산]</strong></td>
+                                <td data-header='2020년'><strong>125,414,840</strong></td>
+                                <td data-header='2021년'><strong>64,128,241</strong></td>
+                                <td data-header='2022년'><strong>71,056,796</strong></td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>현금및현금성자산</td>
+                                <td data-header='2020년'>30,129,678</td>
+                                <td data-header='2021년'>45,778,111</td>
+                                <td data-header='2022년'>6,034,398</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>단기금융상품</td>
+                                <td data-header='2020년'>583,870</td>
+                                <td data-header='2021년'>22,731,340</td>
+                                <td data-header='2022년'>32,050,282</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>매출채권</td>
+                                <td data-header='2020년'>16,216,458</td>
+                                <td data-header='2021년'>12,150,816</td>
+                                <td data-header='2022년'>43,123,096</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>재고자산</td>
+                                <td data-header='2020년'>17,066,473</td>
+                                <td data-header='2021년'>16,634,763</td>
+                                <td data-header='2022년'>18,837,214</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>기타유동자산</td>
+                                <td data-header='2020년'>1,926,201</td>
+                                <td data-header='2021년'>5,153,119</td>
+                                <td data-header='2022년'>4,198,506</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'><strong>[비유동자산]</strong></td>
+                                <td data-header='2020년'><strong>22,098,075</strong></td>
+                                <td data-header='2021년'><strong>29,777,155</strong></td>
+                                <td data-header='2022년'><strong>38,591,330</strong></td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>장기금융상품</td>
+                                <td data-header='2020년'>112,302,223</td>
+                                <td data-header='2021년'>89,964,750</td>
+                                <td data-header='2022년'>58,670,799</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>투자부동산</td>
+                                <td data-header='2020년'>172,717</td>
+                                <td data-header='2021년'>162,916</td>
+                                <td data-header='2022년'>182,416</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>유형자산</td>
+                                <td data-header='2020년'>20,564,716</td>
+                                <td data-header='2021년'>15,247,667</td>
+                                <td data-header='2022년'>12,123,784</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>사용권자산</td>
+                                <td data-header='2020년'>739,808</td>
+                                <td data-header='2021년'>1,478,705</td>
+                                <td data-header='2022년'>577,727</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>무형자산</td>
+                                <td data-header='2020년'>359,997</td>
+                                <td data-header='2021년'>350,648</td>
+                                <td data-header='2022년'>264,454</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>이연법인세자산</td>
+                                <td data-header='2020년'>713,333</td>
+                                <td data-header='2021년'>568,597</td>
+                                <td data-header='2022년'>-</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>기타비유동자산</td>
+                                <td data-header='2020년'>1,143,364</td>
+                                <td data-header='2021년'>1,267,900</td>
+                                <td data-header='2022년'>1,128,256</td>
+                            </tr>
+                            <tr>
+                                <td data-header='자산총계'>자산총계</td>
+                                <td data-header='자산총계'>147,716,973</td>
+                                <td data-header='자산총계'>124,184,059</td>
+                                <td data-header='자산총계'>99,727,005</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[유동부채]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[비유동부재]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='부채총계'>부채종계</td>
+                                <td data-header='부채총계'>52,920,057</td>
+                                <td data-header='부채총계'>32,763,316</td>
+                                <td data-header='부채총계'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[자본금]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[주식발행초과금]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[이익잉여금]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>[기타자본항목]</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='자본총계'>자본종계</td>
+                                <td data-header='자본총계'>52,920,057</td>
+                                <td data-header='자본총계'>32,763,316</td>
+                                <td data-header='자본총계'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>매출액</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>매출총이익</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>영업이익</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                            <tr>
+                                <td data-header='구분'>당기순이익</td>
+                                <td data-header='2020년'>52,920,057</td>
+                                <td data-header='2021년'>32,763,316</td>
+                                <td data-header='2022년'>17,916,283</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+    <section class="section s3 fp-auto-height">
+        <div class="logo-container">
+            <img src="image/logo-black.png" alt="logo xx">
+        </div>
+        <div class="text-container">
+            <p>상호 : 주식회사 꿀잠 | 대표이사 : 김태환 | 개인정보관리책임자 : 원종훈 | 관리자 메일 : kkuljam2023@kkj.co.kr (제휴, 상담문의 불가)<br>
+                통신판매신고 : 2020-인천남동-0310 | 본사 : 인천광역시 남동구 인주대로 593 엔타스빌딩 16층 |사업자 등록번호 : 106-86-01413<br>
+                서비스센터 : 1644-0844 업무시간 : 09:00~17:20 점심시간 : 11:50~12:30 (공휴일 및 토/일 휴무)</p>
+            <br>
+            <p>Copyright ⓒ 2020 KKULJAM Co., Ltd. All Rights Reserved.</p>
+        </div>
+        <div class="image-container">
+            <a href="page1.html"><img src="image/facebook.png" alt="facebook"></a>
+            <a href="page2.html"><img src="image/instagram.png" alt="instagram"></a>
+            <a href="page3.html"><img src="image/kakaotalk.png" alt="kakako"></a>
+            <a href="page3.html"><img src="image/naver.png" alt="naver"></a>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEO인사말 | KKULJAM</title>
+    <link rel="icon" href="image/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="greeting.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="main.html"><img src="image/logo-black.png" alt="" id="logo-img"></a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li data-submenu="submenu1"><a href="about.html" class="nav-a">회사소개</a></li>
+                        <li data-submenu="submenu2"><a href="brandstory.html" class="nav-a">브랜드</a></li>
+                        <li data-submenu="submenu3"><a href="notice.html" class="nav-a">공지사항</a></li>
+                        <li data-submenu="submenu4"><a href="support.html" class="nav-a">고객지원</a></li>
+                        <li data-submenu="submenu5"><a href="financial.html" class="nav-a">투자정보</a></li>
+                    </ul>
+
+                    <div id="submenu1" class="submenu">
+                        <a href="about.html">About 꿀잠</a>
+                        <a href="greeting.html">CEO 인사말</a>
+                        <a href="#">연혁</a>
+                    </div>
+
+                    <div id="submenu2" class="submenu">
+                        <a href="brandstory.html">브랜드 스토리</a>
+                        <a href="#">국내 브랜드</a>
+                        <a href="#">글로벌 브랜드</a>
+                    </div>
+                    <div id="submenu3" class="submenu">
+                        <a href="notice.html">공지사항</a>
+                        <a href="#">뉴스</a>
+                        <a href="#">이벤트</a>
+
+                    </div>
+                    <div id="submenu4" class="submenu">
+                        <a href="support.html">1:1 문의</a>
+                        <a href="#">자주 묻는 질문</a>
+                        <a href="#">자료실</a>
+
+                    </div>
+                    <div id="submenu5" class="submenu">
+                        <a href="#">재무 정보</a>
+                        <a href="#">주가 정보</a>
+                        <a href="#">공시/공고</a>
+                    </div>
+
+                </div>
+                <div class="gnb-util">
+                    <ul>
+                        <li>
+                            <div>
+                                <a href="../shop/shop-main.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                        
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <script>
+        document.querySelectorAll('.nav ul li').forEach(function (menuItem) {
+            var submenuId = menuItem.dataset.submenu;
+            var submenu = document.getElementById(submenuId);
+
+            menuItem.addEventListener('mouseover', function () {
+                submenu.style.opacity = '1';
+                submenu.style.maxHeight = '500px';
+            });
+
+            submenu.addEventListener('mouseover', function () {
+                submenu.style.opacity = '1';
+                submenu.style.maxHeight = '500px';
+            });
+
+            menuItem.addEventListener('mouseout', function () {
+                submenu.style.opacity = '0';
+                submenu.style.maxHeight = '0';
+            });
+
+            submenu.addEventListener('mouseout', function () {
+                submenu.style.opacity = '0';
+                submenu.style.maxHeight = '0';
+            });
+        });
+
+
+    </script>
+
+    <main>
+        <div class="location">
+            <div class="location-inner">
+                회사소개 > CEO인사말
+            </div>
+        </div>
+
+        <div class="section01">
+            <div class="gt-box">
+                <div class="gt-text">
+                    <p>대표이사 인사글</p>
+                    <div class="gt-title">
+                        건강한 수면을 연구하는 목표를 넘어<br>
+                        질 높은 수면을 위한 라이프스타일을 제공하겠습니다.</div>
+                    <div class="gt-main">
+                        안녕하십니까, 대표이사 김태환입니다.
+                        <br><br>
+
+                        수면은 인생의 1/3을 차지하며, 잠이 보약이라는
+                        말이 있을 정도로 우리 삶에서 중요합니다.<br>
+                        그러나 대한민국 인구의 무려 30%가 불면증, 수면무호흡증 등의 수면장애로 인해 낮은 질의 삶을 영위하고 있습니다.<br><br>
+
+                        꿀잠은 수면고민에 대한 공감에서 시작하였습니다.<br>
+                        우리는 다양한 수면고민을 가진 사람들을 만났습니다. 그리고 그들의 고민에 공감했습니다. 모두가 잠자리 만큼은 걱정없이 편안하도록 꿀잠은 올바른 수면을 고민하고
+                        연구합니다.<br><br>
+
+                        잠자리만큼은 누구나 편안할 수 있도록 스트레스, 잘못된 습관과 자세, 부적절한 수면환경으로 인해 고통을 호소하고 있는 많은 분들의 수면 고민을 해결하기 위해
+                        수면공감은 수면환경 연구소(SERI)를 개설했습니다.<br><br>
+
+                        향후 수면 용품 부문에서 글로벌 플레이어가 되고 뉴라이프 가전 부분에서도 글로벌 브랜드로 자리잡을 것입니다. 이와 더불어 꿀잠 수익과 성장이라는 두 핵심가치를 항상 기반에
+                        두고 나아갈 것입니다. 고객 여러분의 끊임없는 관심과 사랑 부탁드리며, 항상 소통하는 브랜드 기업이 될 수 있도록 노력하겠습니다.
+                        <br><br>
+                        감사합니다.<br>
+                        Be Your Life, KKULJAM.
+                    </div>
+
+                    <div class="gt-end">
+                        주식회사 꿀잠 대표이사<img src="image/ceo-sign.png" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+    <section class="section s3 fp-auto-height">
+        <div class="logo-container">
+            <img src="image/logo-black.png" alt="logo xx">
+        </div>
+        <div class="text-container">
+            <p>상호 : 주식회사 꿀잠 | 대표이사 : 김태환 | 개인정보관리책임자 : 원종훈 | 관리자 메일 : kkuljam2023@kkj.co.kr (제휴, 상담문의 불가)<br>
+                통신판매신고 : 2020-인천남동-0310 | 본사 : 인천광역시 남동구 인주대로 593 엔타스빌딩 16층 |사업자 등록번호 : 106-86-01413<br>
+                서비스센터 : 1644-0844 업무시간 : 09:00~17:20 점심시간 : 11:50~12:30 (공휴일 및 토/일 휴무)</p>
+            <br>
+            <p>Copyright ⓒ 2020 KKULJAM Co., Ltd. All Rights Reserved.</p>
+        </div>
+        <div class="image-container">
+            <a href="page1.html"><img src="image/facebook.png" alt="facebook"></a>
+            <a href="page2.html"><img src="image/instagram.png" alt="instagram"></a>
+            <a href="page3.html"><img src="image/kakaotalk.png" alt="kakako"></a>
+            <a href="page3.html"><img src="image/naver.png" alt="naver"></a>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>
