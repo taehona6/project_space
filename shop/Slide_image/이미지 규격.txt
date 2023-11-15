@@ -1,0 +1,6 @@
+Slide_image : 1920x610
+Loveditem : 600x600
+three-row-img : 540x364
+three-row-item : 143x143
+category-item : 228x228
+category-slide : 990x310
